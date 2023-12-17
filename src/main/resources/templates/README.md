@@ -1,2 +1,0 @@
-# etauliah
-etauliah php project
