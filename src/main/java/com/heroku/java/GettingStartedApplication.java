@@ -26,10 +26,10 @@ public class GettingStartedApplication {
         return "index";
     }
 
-    //  @GetMapping("/dashboardStudent")
-    // public String dashboardStudent() {
-    //     return "dashboard/dashboardStudent";
-    // }
+     @GetMapping("/dashboardStudent")
+    public String dashboardStudent() {
+        return "dashboard/dashboardStudent";
+    }
 
     @GetMapping("/database")
     String database(Map<String, Object> model) {
