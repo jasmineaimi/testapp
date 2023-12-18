@@ -34,7 +34,7 @@ public class GettingStartedApplication {
 
     @GetMapping("/")
     public String index() {
-        return "dashboardStudent";
+        return "index";
     }
 
     @GetMapping("/signup")
