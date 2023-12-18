@@ -37,17 +37,17 @@ public class GettingStartedApplication {
         return "index";
     }
 
-    @GetMapping("/index")
-    public String getLogin(Model model) {
-        model.addAttribute("loginForm", new LoginForm()); 
-        return "login"; 
-    }
+    // @GetMapping("/index")
+    // public String getLogin(Model model) {
+    //     model.addAttribute("loginForm", new LoginForm()); 
+    //     return "login"; 
+    // }
 
-    @PostMapping("/index")
-    public String submitLogin(LoginForm loginForm) {
-        // validate and process form
-        return "redirect:/dashboardStudent";
-    }
+    // @PostMapping("/index")
+    // public String submitLogin(LoginForm loginForm) {
+    //     // validate and process form
+    //     return "redirect:/dashboardStudent";
+    // }
 
     // @PostMapping("/index")
     // public String submitLogin(LoginForm loginForm) {
