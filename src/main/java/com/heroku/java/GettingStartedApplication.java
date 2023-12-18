@@ -37,9 +37,16 @@ public class GettingStartedApplication {
         return "index";
     }
 
-     @PostMapping("/index")
-    public String dashboardStudent() {
-        return "redirect: dashboard/dashboardStudent";
+    @GetMapping("/index")
+    public String getLogin(Model model) {
+        model.addAttribute("loginForm", new LoginForm()); 
+        return "login"; 
+    }
+
+    @PostMapping("/index")
+    public String submitLogin(LoginForm loginForm) {
+        // validate and process form
+        return "redirect:/dashboardStudent";
     }
 
     // @PostMapping("/index")
