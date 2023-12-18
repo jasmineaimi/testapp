@@ -37,6 +37,15 @@ public class GettingStartedApplication {
         return "index";
     }
 
+    @GetMapping("/signup")
+    public String about() {
+        return "sign-in/signup";
+    }
+
+     @GetMapping("/reminder")
+    public String reminder() {
+        return "sign-in/reminder";
+    }
     // @GetMapping("/index")
     // public String getLogin(Model model) {
     //     model.addAttribute("loginForm", new LoginForm()); 
