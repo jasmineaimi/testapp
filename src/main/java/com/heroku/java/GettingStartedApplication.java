@@ -37,10 +37,16 @@ public class GettingStartedApplication {
         return "index";
     }
 
-     @GetMapping("/dashboardStudent")
+     @PostMapping("/index")
     public String dashboardStudent() {
-        return "dashboard/dashboardStudent";
+        return "redirect: dashboard/dashboardStudent";
     }
+
+    // @PostMapping("/index")
+    // public String submitLogin(LoginForm loginForm) {
+    //     // validate and process form
+    //     return "redirect:/home";
+    // }
 
     @GetMapping("/database")
     String database(Map<String, Object> model) {
