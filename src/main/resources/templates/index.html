@@ -147,14 +147,20 @@ MAIN CONTENT LAYOUT
                 </div>
               </div>
               <div class="form-group">
-                <a class="btn btn-sm btn-hero btn-alt-primary" th:href="@{/dashboardStudent}">
-                  <i class="si si-login mr-10"></i> Log Masuk
+                <a class="btn btn-hero btn-alt-secondary" th:href="@{/dashboardStudent}" target="_blank">
+                  <i class="fa fa-arrow-right text-muted mr-5"></i> Enter Dashboard
                 </a>
+                <button type="submit" class="btn btn-sm btn-hero btn-alt-primary" >
+                  <i class="si si-login mr-10"></i> Log Masuk
+                </button>
                 <div class="mt-30">
                   <a class="link-effect text-muted mr-10 mb-5 d-inline-block" th:href="@{/signup}">
                     <i class="fa fa-plus mr-5"></i> Cipta Akaun
                   </a>
                   <a class="link-effect text-muted mr-10 mb-5 d-inline-block" th:href="@{/reminder}">
+                    <i class="fa fa-warning mr-5"></i> Lupa Kata Laluan
+                  </a>
+                  <a class="link-effect text-muted mr-10 mb-5 d-inline-block" type="button" th:href="@{/reminder}">
                     <i class="fa fa-warning mr-5"></i> Lupa Kata Laluan
                   </a>
                 </div>
