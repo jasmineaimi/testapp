@@ -48,8 +48,7 @@ public class GettingStartedApplication {
     }
 
     @GetMapping("/dashboardStudent")
-    public String dashboardstudent()
-    {
+    public String dashboardstudent(){
         return "dashboard/dashboardStudent";
     }
     // @GetMapping("/index")
