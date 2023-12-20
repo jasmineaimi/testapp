@@ -47,9 +47,9 @@ public class GettingStartedApplication {
         return "sign-in/reminder";
     }
 
-    @GetMapping("/dashboardCoor")
-    public String dashboardcoordinator(){
-        return "dashboard/dashboardCoor";
+    @GetMapping("/dashboardStudent")
+    public String dashboardstudent(){
+        return "dashboard/dashboardStudent";
     }
     // @GetMapping("/index")
     // public String getLogin(Model model) {
