@@ -46,6 +46,11 @@ public class GettingStartedApplication {
     public String reminder() {
         return "sign-in/reminder";
     }
+
+    @GetMapping("/dashboardStudent")
+    public String dashboardStud() {
+        return "dashboard/dashboardStudent";
+    }
     // @GetMapping("/index")
     // public String getLogin(Model model) {
     //     model.addAttribute("loginForm", new LoginForm()); 
