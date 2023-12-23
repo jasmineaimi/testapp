@@ -66,6 +66,11 @@ public class GettingStartedApplication {
     public String dashboardstudent(){
         return "dashboard/dashboardStudent";
     }
+
+     @GetMapping("/edit_profile")
+    public String profileStudent(){
+        return "profileStud/edit_profile";
+    }
   
 
 
