@@ -18,7 +18,7 @@
     <meta property="og:url" content="">
     <meta property="og:image" content="">
 
-     <!-- Icons -->
+    <!-- Icons -->
     <!-- The following icons can be replaced with your own, they are used by desktop and mobile browsers -->
     <link rel="shortcut icon" th:href="@{stylesheets/assets/media/favicons/favicon.png}">
     <link rel="icon" type="image/png" sizes="192x192" th:href="@{stylesheets/assets/media/favicons/favicon-192x192.png}">
@@ -439,14 +439,14 @@
             <div class="content-side content-side-full content-side-user px-10 align-parent">
               <!-- Visible only in mini mode -->
               <div class="sidebar-mini-visible-b align-v animated fadeIn">
-                <img class="img-avatar img-avatar32" th:src="@{stylesheetsssets/media/avatars/avatar15.jpg}" alt="">
+                <img class="img-avatar img-avatar32" th:src="@{stylesheets/assets/media/avatars/avatar15.jpg}" alt="">
               </div>
               <!-- END Visible only in mini mode -->
 
               <!-- Visible only in normal mode -->
               <div class="sidebar-mini-hidden-b text-center">
                 <a class="img-link" href="be_pages_generic_profile.html">
-                  <img class="img-avatar" th:src="@{stylesheets/assets/media/avatars/avatar15.jpg}" alt="">
+                  <img class="img-avatar" th:src="{stylesheets/assets/media/avatars/avatar15.jpg}" alt="">
                 </a>
                 <ul class="list-inline mt-10">
                   <li class="list-inline-item">
@@ -695,32 +695,6 @@
       <main id="main-container">
         <!-- Page Content -->
         <!-- User Info -->
-        <div class="bg-image bg-image-bottom" style="background-image: url('stylesheets/assets/media/photos/photo13@2x.jpg');">
-          <div class="bg-black-op-75 py-30">
-            <div class="content content-full text-center">
-              <!-- Avatar -->
-              <div class="mb-15">
-                <a class="img-link" href="be_pages_generic_profile.html">
-                  <img class="img-avatar img-avatar96 img-avatar-thumb" th:src="@{stylesheets/assets/media/avatars/avatar15.jpg}" alt="">
-                </a>
-              </div>
-              <!-- END Avatar -->
-
-              <!-- Personal -->
-              <h1 class="h3 text-white font-w700 mb-10">SAYF FURQAN</h1>
-              <!-- <h2 class="h5 text-white-op">
-                Kelas 
-              </h2> -->
-              <!-- END Personal -->
-
-              <!-- Actions -->
-              <a th:href="@{/dashboardStudent}" class="btn btn-rounded btn-hero btn-sm btn-alt-secondary mb-5">
-                <i class="fa fa-arrow-left mr-5"></i> Kembali
-              </a>
-              <!-- END Actions -->
-            </div>
-          </div>
-        </div>
         <!-- END User Info -->
 
         <!-- Main Content -->
@@ -729,81 +703,212 @@
           <div class="block">
             <div class="block-header block-header-default">
               <h3 class="block-title">
-                <i class="fa fa-user-circle mr-5 text-muted"></i> Profile Pengguna
+                <i class="fa fa-group mr-5 text-muted"></i> KOKURIKULUM SEMASA
               </h3>
             </div>
             <div class="block-content">
-              <form action="be_pages_generic_profile.edit.html" method="POST" enctype="multipart/form-data" onsubmit="return false;">
-                <div class="row items-push">
-                  <div class="col-lg-3">
-                    <p class="text-muted">
-                      Maklumat akaun profil anda. Nama pengguna akan dipaparkan kepada umum.
-                    </p>
-                  </div>
-                  <div class="col-lg-7 offset-lg-1">
-                    <div class="form-group row">
-                        <div class="col-md-10 col-xl-6">
-                          <div class="push">
-                            <img class="img-avatar" th:src="@{stylesheets/assets/media/avatars/avatar15.jpg}" alt="">
-                          </div>
-                          <div class="custom-file">
-                            <!-- Populating custom file input label with the selected filename (data-toggle="custom-file-input" is initialized in Helpers.coreBootstrapCustomFileInput()) -->
-                            <input type="file" class="custom-file-input" id="profile-settings-avatar" name="profile-settings-avatar" data-toggle="custom-file-input">
-                            <label class="custom-file-label" for="profile-settings-avatar">Choose new avatar</label>
-                          </div>
+                <form action="be_pages_generic_profile.edit.html" method="POST" enctype="multipart/form-data"
+                    onsubmit="return false;">
+                    <div class="row justify-content-center">
+                        <!-- Bordered Table -->
+                        <div class="block">
+                            <div class="block-content">
+                                <table class="table table-bordered table-vcenter">
+                                    <thead>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th class="text-center" style="width: 250px;">Nama</th>
+                                            <th style="width: 550px;">Muhammad Sayf Furqan Bin Mohd Shafiq Firdaus </th>
+                                        </tr>
+                                        <tr>
+                                            <th class="text-center" style="width: 250px;">No.Kad Pengenalan</th>
+                                            <th style="width: 550px;">080912109987</th>
+                                        </tr>
+                                        <tr>
+                                            <th class="text-center" style="width: 250px;">Kelas</th>
+                                            <th style="width: 550px;">3  Mukhriz</th>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
-                      </div>
-                    <div class="form-group row">
-                      <div class="col-12">
-                        <label for="profile-settings-username">Username</label>
-                        <input type="text" class="form-control form-control-lg" id="profile-settings-username" name="profile-settings-username" placeholder="Enter your username.." value="sayf furqan">
-                      </div>
+                        <!-- END Bordered Table -->
                     </div>
-                    <div class="form-group row">
-                      <div class="col-12">
-                        <label for="profile-settings-name">Nama</label>
-                        <input type="text" class="form-control form-control-lg" id="profile-settings-name" name="profile-settings-name" placeholder="Enter your name.." value="Muhammad Sayf Furqan Bin Mohd Shafiq Firdaus ">
-                      </div>
-                    </div>
-                    <div class="form-group row">
-                      <div class="col-12">
-                        <label for="profile-settings-email">Email</label>
-                        <input type="email" class="form-control form-control-lg" id="profile-settings-email" name="profile-settings-email" placeholder="Enter your email.." value="sayf9@gmail.com">
-                      </div>
-                    </div>
-                    <div class="form-group row">
-                        <div class="col-12">
-                          <label for="profile-settings-name">Nombor Telefon</label>
-                          <input type="text" class="form-control form-control-lg" id="profile-settings-name" name="profile-settings-name" placeholder="Enter your name.." value="0117110902">
+                     <!-- Vertical Block Tabs Default Style -->
+              <div class="block row no-gutters">
+                <ul class="nav nav-tabs nav-tabs-block flex-md-column col-md-4" data-toggle="tabs" role="tablist">
+                  <li class="nav-item d-md-flex flex-md-column">
+                    <a class="nav-link text-md-left active" href="#btabs-vertical-unit">
+                      <i class="fa fa-fw fa-home text-muted mr-1 d-none d-sm-inline-block"></i> Unit Beruniform
+                    </a>
+                  </li>
+                  <li class="nav-item d-md-flex flex-md-column">
+                    <a class="nav-link text-md-left" href="#btabs-vertical-kelab">
+                      <i class="fa fa-fw fa-user text-muted mr-1 d-none d-sm-inline-block"></i> Kelab dan Persatuan
+                    </a>
+                  </li>
+                  <li class="nav-item d-md-flex flex-md-column">
+                    <a class="nav-link text-md-left" href="#btabs-vertical-sukan">
+                      <i class="fa fa-cubes text-muted mr-1 d-none d-sm-inline-block"></i> Sukan dan Permainan
+                    </a>
+                  </li>
+                </ul>
+                <div class="tab-content col-md-8">
+                    <div class="block-content tab-pane active" id="btabs-vertical-unit" role="tabpanel">
+                        <div class="block-content">
+                            <form action="" method="POST" enctype="multipart/form-data" onsubmit="return false;">
+                                <div class="row items-push">
+                                    <div class="col-lg-12">
+                                        <div class="form-group row">
+                                            <div class="col-12">
+                                                <label for="profile-settings-username">Unit Beruniform</label>
+                                                <input type="text" class="form-control" id="profile-settings-username"
+                                                    name="profile-settings-username" placeholder=""
+                                                    value="Kadet Remaja Sekolah" readonly>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <div class="col-12">
+                                                <label for="profile-settings-username">Tahun</label>
+                                                <input type="text" class="form-control" id="profile-settings-username"
+                                                    name="profile-settings-username" placeholder="" value="2021" readonly>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <div class="col-12">
+                                                <label for="profile-settings-name">Penyelaras Unit Beruniform</label>
+                                                <input type="text" class="form-control" id="profile-settings-name"
+                                                    name="profile-settings-name" placeholder="" value="En.Subramaniam A/L Sengodan" readonly>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-12" for="example-multiple-select">Guru yang Bertanggungjawab</label>
+                                            <div class="col-md-9">
+                                                <select class="form-control" id="example-multiple-select" name="example-multiple-select"
+                                                    size="7" multiple disabled>
+                                                    <option value="1">Cikgu #1</option>
+                                                    <option value="2">Cikgu #2</option>
+                                                    <option value="3">Cikgu #3</option>
+                                                    <option value="4">Cikgu #4</option>
+                                                    <option value="5">Cikgu #5</option>
+                                                    <option value="6">Cikgu #6</option>
+                                                    <option value="7">Cikgu #7</option>
+                                                    <option value="8">Cikgu #8</option>
+                                                    <option value="9">Cikgu #9</option>
+                                                    <option value="10">Cikgu #10</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
-                      </div>
-                      <div class="form-group row">
-                        <div class="col-12">
-                          <label for="profile-settings-email">Tarikh Lahir</label>
-                          <input type="date" class="js-datepicker form-control form-control-lg" id="example-datepicker6" name="dob" data-week-start="1" data-autoclose="true" data-today-highlight="true" data-date-format="dd-mm-yyyy" placeholder="dd-mm-yyyy" >
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <label class="col-12">Jantina</label>
-                        <div class="col-12">
-                          <div class="custom-control custom-radio custom-control-inline mb-5">
-                            <input class="custom-control-input" type="radio" name="example-inline-radios" id="example-inline-radio1" value="option1" checked>
-                            <label class="custom-control-label" for="example-inline-radio1">Lelaki</label>
-                          </div>
-                          <div class="custom-control custom-radio custom-control-inline mb-5">
-                            <input class="custom-control-input" type="radio" name="example-inline-radios" id="example-inline-radio2" value="option2">
-                            <label class="custom-control-label" for="example-inline-radio2">Perempuan</label>
-                          </div>
-                        </div>
-                      </div>
-                    <div class="form-group row">
-                      <div class="col-12">
-                        <button type="submit" class="btn btn-alt-primary">Kemaskini</button>
-                      </div>
                     </div>
-                  </div>
+                    <div class="block-content tab-pane" id="btabs-vertical-kelab" role="tabpanel">
+                        <div class="block-content">
+                            <form action="" method="POST" enctype="multipart/form-data" onsubmit="return false;">
+                                <div class="row items-push">
+                                    <div class="col-lg-12">
+                                        <div class="form-group row">
+                                            <div class="col-12">
+                                                <label for="profile-settings-username">Kelab dan Persatuan</label>
+                                                <input type="text" class="form-control" id="profile-settings-username"
+                                                    name="profile-settings-username" placeholder=""
+                                                    value="Kelab Perpustakaan" readonly>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <div class="col-12">
+                                                <label for="profile-settings-username">Tahun</label>
+                                                <input type="text" class="form-control" id="profile-settings-username"
+                                                    name="profile-settings-username" placeholder="" value="2021" readonly>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <div class="col-12">
+                                                <label for="profile-settings-name">Penyelaras Kelab dan Persatuan</label>
+                                                <input type="text" class="form-control" id="profile-settings-name"
+                                                    name="profile-settings-name" placeholder="" value="Cik Siti Nor Aini Bt Mohd Nor" readonly>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-12" for="example-multiple-select">Guru yang Bertanggungjawab</label>
+                                            <div class="col-md-9">
+                                                <select class="form-control" id="example-multiple-select" name="example-multiple-select"
+                                                    size="7" multiple disabled>
+                                                    <option value="1">Cikgu #1</option>
+                                                    <option value="2">Cikgu #2</option>
+                                                    <option value="3">Cikgu #3</option>
+                                                    <option value="4">Cikgu #4</option>
+                                                    <option value="5">Cikgu #5</option>
+                                                    <option value="6">Cikgu #6</option>
+                                                    <option value="7">Cikgu #7</option>
+                                                    <option value="8">Cikgu #8</option>
+                                                    <option value="9">Cikgu #9</option>
+                                                    <option value="10">Cikgu #10</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="block-content tab-pane" id="btabs-vertical-sukan" role="tabpanel">
+                        <div class="block-content">
+                            <form action="" method="POST" enctype="multipart/form-data" onsubmit="return false;">
+                                <div class="row items-push">
+                                    <div class="col-lg-12">
+                                        <div class="form-group row">
+                                            <div class="col-12">
+                                                <label for="profile-settings-username">Sukan dan Permainan</label>
+                                                <input type="text" class="form-control" id="profile-settings-username"
+                                                    name="profile-settings-username" placeholder=""
+                                                    value="Sepak Takraw" readonly>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <div class="col-12">
+                                                <label for="profile-settings-username">Tahun</label>
+                                                <input type="text" class="form-control" id="profile-settings-username"
+                                                    name="profile-settings-username" placeholder="" value="2021" readonly>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <div class="col-12">
+                                                <label for="profile-settings-name">Penyelaras Sukan dan Permainan</label>
+                                                <input type="text" class="form-control" id="profile-settings-name"
+                                                    name="profile-settings-name" placeholder="" value="En Zioar Rahman Bin Othman" readonly>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-12" for="example-multiple-select">Guru yang Bertanggungjawab</label>
+                                            <div class="col-md-9">
+                                                <select class="form-control" id="example-multiple-select" name="example-multiple-select"
+                                                    size="7" multiple disabled>
+                                                    <option value="1">Cikgu #1</option>
+                                                    <option value="2">Cikgu #2</option>
+                                                    <option value="3">Cikgu #3</option>
+                                                    <option value="4">Cikgu #4</option>
+                                                    <option value="5">Cikgu #5</option>
+                                                    <option value="6">Cikgu #6</option>
+                                                    <option value="7">Cikgu #7</option>
+                                                    <option value="8">Cikgu #8</option>
+                                                    <option value="9">Cikgu #9</option>
+                                                    <option value="10">Cikgu #10</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
-              </form>
+              </div>
+              <!-- END Vertical Block Tabs Default Style -->
+                </form>
             </div>
           </div>
           <!-- END User Profile -->
@@ -811,51 +916,7 @@
           <!-- Connections -->
           <!-- END Connections -->
 
-          <!-- Change Password -->
-          <div class="block">
-            <div class="block-header block-header-default">
-              <h3 class="block-title">
-                <i class="fa fa-asterisk mr-5 text-muted"></i> Tukar Kata Laluan
-              </h3>
-            </div>
-            <div class="block-content">
-              <form action="be_pages_generic_profile.edit.html" method="post" onsubmit="return false;">
-                <div class="row items-push">
-                  <div class="col-lg-3">
-                    <p class="text-muted">
-                      Tukar kata laluan semasa.
-                    </p>
-                  </div>
-                  <div class="col-lg-7 offset-lg-1">
-                    <div class="form-group row">
-                      <div class="col-12">
-                        <label for="profile-settings-password">Kata Laluan Semasa</label>
-                        <input type="password" class="form-control form-control-lg" id="profile-settings-password" name="profile-settings-password">
-                      </div>
-                    </div>
-                    <div class="form-group row">
-                      <div class="col-12">
-                        <label for="profile-settings-password-new">Kata Laluan Baru</label>
-                        <input type="password" class="form-control form-control-lg" id="profile-settings-password-new" name="profile-settings-password-new">
-                      </div>
-                    </div>
-                    <div class="form-group row">
-                      <div class="col-12">
-                        <label for="profile-settings-password-new-confirm">Sahkan Kata Laluan Baru</label>
-                        <input type="password" class="form-control form-control-lg" id="profile-settings-password-new-confirm" name="profile-settings-password-new-confirm">
-                      </div>
-                    </div>
-                    <div class="form-group row">
-                      <div class="col-12">
-                        <button type="submit" class="btn btn-alt-primary">Kemaskini</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-          <!-- END Change Password -->
+       
 
           <!-- Billing Information -->
           <!-- END Billing Information -->

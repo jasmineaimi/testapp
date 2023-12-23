@@ -71,6 +71,11 @@ public class GettingStartedApplication {
     public String profileStudent(){
         return "profileStud/edit_profile";
     }
+
+       @GetMapping("/semasa")
+    public String semasa(){
+        return "kokurikulum/semasa";
+    }
   
 
 
