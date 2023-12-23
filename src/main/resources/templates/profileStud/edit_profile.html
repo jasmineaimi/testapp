@@ -18,31 +18,31 @@
     <meta property="og:url" content="">
     <meta property="og:image" content="">
 
-    <!-- Icons -->
+     <!-- Icons -->
     <!-- The following icons can be replaced with your own, they are used by desktop and mobile browsers -->
-    <link rel="shortcut icon" href="../assets/media/favicons/favicon.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="../assets/media/favicons/favicon-192x192.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="../assets/media/favicons/apple-touch-icon-180x180.png">
+    <link rel="shortcut icon" th:href="@{stylesheets/assets/media/favicons/favicon.png}">
+    <link rel="icon" type="image/png" sizes="192x192" th:href="@{stylesheets/assets/media/favicons/favicon-192x192.png}">
+    <link rel="apple-touch-icon" sizes="180x180" th:href="@{stylesheets/assets/media/favicons/apple-touch-icon-180x180.png}">
     <!-- END Icons -->
-
-    <!-- Stylesheets -->
-
+    
+    <!-- stylesheets -->
+    
     <!-- Fonts and Codebase framework -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,400i,600,700&display=swap">
-    <link rel="stylesheet" id="css-main" href="../assets/css/codebase.min.css">
-
-    <!-- You can include a specific file from css/themes/ folder to alter the default color theme of the template. eg: -->
-    <!-- <link rel="stylesheet" id="css-theme" href="../assets/css/themes/corporate.min.css"> -->
-    <link rel="stylesheet" id="css-theme" href="../assets/css/themes/flat.min.css"> 
-    <!-- <link rel="stylesheet" id="css-theme" href="../assets/css/themes/earth.min.css"> 
-    <!-- <link rel="stylesheet" id="css-theme" href="../assets/css/themes/elegance.min.css">
-    <link rel="stylesheet" id="css-theme" href="../assets/css/themes/pulse.min.css"> -->
+    <link rel="stylesheet" id="css-main" th:href="@{stylesheets/assets/css/codebase.min.css}">
     
-    <!-- <link rel="stylesheet" id="css-theme" href="../assets/css/themes/elegance.min.css"> -->
-
+        <!-- You can include a specific file from css/themes/ folder to alter the default color theme of the template. eg: -->
+    <!-- <link rel="stylesheet" id="css-theme" th:href="../assets/css/themes/corporate.min.css"> -->
+    <link rel="stylesheet" id="css-theme" th:href="@{stylesheets/assets/css/themes/flat.min.css}"> 
+    <!-- <link rel="stylesheet" id="css-theme" th:href="../assets/css/themes/earth.min.css"> 
+    <!-- <link rel="stylesheet" id="css-theme" th:href="../assets/css/themes/elegance.min.css">
+    <link rel="stylesheet" id="css-theme" th:href="../assets/css/themes/pulse.min.css"> -->
+    
+    <!-- <link rel="stylesheet" id="css-theme" th:href="../assets/css/themes/elegance.min.css"> -->
+    
     <!-- You can include a specific file from css/themes/ folder to alter the default color theme of the template. eg: -->
-    <!-- <link rel="stylesheet" id="css-theme" href="assets/css/themes/flat.min.css"> -->
-    <!-- END Stylesheets -->
+    <!-- <link rel="stylesheet" id="css-theme" th:href="assets/css/themes/flat.min.css"> -->
+    <!-- END stylesheets -->
   </head>
   <body>
     <!-- Page Container -->
@@ -439,14 +439,14 @@
             <div class="content-side content-side-full content-side-user px-10 align-parent">
               <!-- Visible only in mini mode -->
               <div class="sidebar-mini-visible-b align-v animated fadeIn">
-                <img class="img-avatar img-avatar32" src="../assets/media/avatars/avatar15.jpg" alt="">
+                <img class="img-avatar img-avatar32" th:src="@{stylesheetsssets/media/avatars/avatar15.jpg}" alt="">
               </div>
               <!-- END Visible only in mini mode -->
 
               <!-- Visible only in normal mode -->
               <div class="sidebar-mini-hidden-b text-center">
                 <a class="img-link" href="be_pages_generic_profile.html">
-                  <img class="img-avatar" src="../assets/media/avatars/avatar15.jpg" alt="">
+                  <img class="img-avatar" th:src="@{stylesheets/assets/media/avatars/avatar15.jpg}" alt="">
                 </a>
                 <ul class="list-inline mt-10">
                   <li class="list-inline-item">
@@ -459,7 +459,7 @@
                     </a>
                   </li>
                   <li class="list-inline-item">
-                    <a class="link-effect text-dual-primary-dark" href="../sign-in/signIn.html">
+                    <a class="link-effect text-dual-primary-dark" th:href="@{/signin}">
                       <i class="si si-logout"></i>
                     </a>
                   </li>
@@ -471,231 +471,45 @@
 
             <!-- Side Navigation -->
             <div class="content-side content-side-full">
-                <ul class="nav-main">
-                  <li>
-                    <a class="active" href="../dashboard/dashboardStudent.html"><i class="si si-cup"></i><span class="sidebar-mini-hide">DASHBOARD</span></a>
-                  </li>
-                  <li>
-                    <a class="active" href="../profileStud/edit_profile.html"><i class="si si-user"></i><span class="sidebar-mini-hide">PROFIL</span></a>
-                  </li>
-                  <!-- <li>
-                    <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="si si-badge"></i><span class="sidebar-mini-hide">Page Kits</span></a>
-                    <ul>
-                      <li>
-                        <a class="nav-submenu" data-toggle="nav-submenu" href="#"><span class="sidebar-mini-hide">Dashboards</span></a>
-                        <ul>
-                          <li>
-                            <a href="be_pages_dashboard2.html"><span class="sidebar-mini-hide">Dashboard 2</span></a>
-                          </li>
-                          <li>
-                            <a href="be_pages_dashboard3.html"><span class="sidebar-mini-hide">Dashboard 3</span></a>
-                          </li>
-                          <li>
-                            <a href="be_pages_dashboard4.html"><span class="sidebar-mini-hide">Dashboard 4</span></a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li>
-                        <a class="nav-submenu" data-toggle="nav-submenu" href="#"><span class="sidebar-mini-hide">Hosting</span></a>
-                        <ul>
-                          <li>
-                            <a href="be_pages_hosting_dashboard.html">Dashboard</a>
-                          </li>
-                          <li>
-                            <a href="be_pages_hosting_emails.html">Emails</a>
-                          </li>
-                          <li>
-                            <a href="be_pages_hosting_account.html">Account</a>
-                          </li>
-                          <li>
-                            <a href="be_pages_hosting_support.html">Support</a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li>
-                        <a class="nav-submenu" data-toggle="nav-submenu" href="#"><span class="sidebar-mini-hide">Real Estate</span></a>
-                        <ul>
-                          <li>
-                            <a href="be_pages_real_estate_dashboard.html">Dashboard</a>
-                          </li>
-                          <li>
-                            <a href="be_pages_real_estate_listing.html">Listing</a>
-                          </li>
-                          <li>
-                            <a href="be_pages_real_estate_listing_new.html">Add New Listing</a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li>
-                        <a class="nav-submenu" data-toggle="nav-submenu" href="#"><span class="sidebar-mini-hide">Crypto</span></a>
-                        <ul>
-                          <li>
-                            <a href="be_pages_crypto_dashboard.html">Dashboard</a>
-                          </li>
-                          <li>
-                            <a href="be_pages_crypto_buy_sell.html">Buy/Sell</a>
-                          </li>
-                          <li>
-                            <a href="be_pages_crypto_wallets.html">Wallets</a>
-                          </li>
-                          <li>
-                            <a href="be_pages_crypto_settings.html">Settings</a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li>
-                        <a class="nav-submenu" data-toggle="nav-submenu" href="#"><span class="sidebar-mini-hide">e-Commerce</span></a>
-                        <ul>
-                          <li>
-                            <a href="be_pages_ecom_dashboard.html">Dashboard</a>
-                          </li>
-                          <li>
-                            <a href="be_pages_ecom_orders.html">Orders</a>
-                          </li>
-                          <li>
-                            <a href="be_pages_ecom_order.html">Order</a>
-                          </li>
-                          <li>
-                            <a href="be_pages_ecom_products.html">Products</a>
-                          </li>
-                          <li>
-                            <a href="be_pages_ecom_product_edit.html">Product Edit</a>
-                          </li>
-                          <li>
-                            <a href="be_pages_ecom_customer.html">Customer</a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li>
-                        <a class="nav-submenu" data-toggle="nav-submenu" href="#"><span class="sidebar-mini-hide">e-Learning</span></a>
-                        <ul>
-                          <li>
-                            <a href="be_pages_elearning_courses.html">Courses</a>
-                          </li>
-                          <li>
-                            <a href="be_pages_elearning_course.html">Course</a>
-                          </li>
-                          <li>
-                            <a href="be_pages_elearning_lesson.html">Lesson</a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li>
-                        <a class="nav-submenu" data-toggle="nav-submenu" href="#"><span class="sidebar-mini-hide">Forum</span></a>
-                        <ul>
-                          <li>
-                            <a href="be_pages_forum_categories.html">Categories</a>
-                          </li>
-                          <li>
-                            <a href="be_pages_forum_topics.html">Topics</a>
-                          </li>
-                          <li>
-                            <a href="be_pages_forum_discussion.html">Discussion</a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li>
-                        <a class="nav-submenu" data-toggle="nav-submenu" href="#"><span class="sidebar-mini-hide">Alternative Dashboards</span></a>
-                        <ul>
-                          <li>
-                            <a href="db_classic.html"><span class="sidebar-mini-hide">Classic</span></a>
-                          </li>
-                          <li>
-                            <a href="db_clean.html"><span class="sidebar-mini-hide">Clean</span></a>
-                          </li>
-                          <li>
-                            <a href="db_social.html"><span class="sidebar-mini-hide">Social</span></a>
-                          </li>
-                          <li>
-                            <a href="db_corporate.html"><span class="sidebar-mini-hide">Corporate</span></a>
-                          </li>
-                          <li>
-                            <a href="db_minimal.html"><span class="sidebar-mini-hide">Minimal</span></a>
-                          </li>
-                          <li>
-                            <a href="db_pop.html"><span class="sidebar-mini-hide">Pop</span></a>
-                          </li>
-                          <li>
-                            <a href="db_dark.html"><span class="sidebar-mini-hide">Dark</span></a>
-                          </li>
-                          <li>
-                            <a href="db_medical.html"><span class="sidebar-mini-hide">Medical</span></a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li>
-                        <a class="nav-submenu" data-toggle="nav-submenu" href="#"><span class="sidebar-mini-hide">Boxed Backend</span></a>
-                        <ul>
-                          <li>
-                            <a href="bd_dashboard.html">Dashboard</a>
-                          </li>
-                          <li>
-                            <a href="bd_search.html">Search</a>
-                          </li>
-                          <li>
-                            <a href="bd_variations_hero_simple_1.html">Hero Simple 1</a>
-                          </li>
-                          <li>
-                            <a href="bd_variations_hero_simple_2.html">Hero Simple 2</a>
-                          </li>
-                          <li>
-                            <a href="bd_variations_hero_simple_3.html">Hero Simple 3</a>
-                          </li>
-                          <li>
-                            <a href="bd_variations_hero_simple_4.html">Hero Simple 4</a>
-                          </li>
-                          <li>
-                            <a href="bd_variations_hero_image_1.html">Hero Image 1</a>
-                          </li>
-                          <li>
-                            <a href="bd_variations_hero_image_2.html">Hero Image 2</a>
-                          </li>
-                          <li>
-                            <a href="bd_variations_hero_image_3.html">Hero Image 3</a>
-                          </li>
-                          <li>
-                            <a href="bd_variations_hero_image_4.html">Hero Image 4</a>
-                          </li>
-                          <li>
-                            <a href="bd_variations_hero_video_1.html">Hero Video 1</a>
-                          </li>
-                          <li>
-                            <a href="bd_variations_hero_video_2.html">Hero Video 2</a>
-                          </li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </li> -->
-                  <li>
-                    <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="si si-note"></i><span class="sidebar-mini-hide">KOKURIKULUM</span></a>
-                    <ul>
-                      <li>
-                        <a href="../kokurikulum/semasa.html">Kokurikulum Semasa</a>
-                      </li>
-                      <li>
-                        <a href="../kokurikulum/pendaftaran.html">Pendaftaran Kokurikulum</a>
-                      </li>
-                      <li>
-                        <a href="../kokurikulum/semakan.html">Semakan Keputusan Pendaftaran</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="si si-layers"></i><span class="sidebar-mini-hide">KATEGORI</span></a>
-                    <ul>
-                      <li>
-                        <a href="../info_cat/info_unit.html">Unit Beruniform</a>
-                      </li>
-                      <li>
-                        <a href="../info_cat/info_kelab.html">Kelab dan Persatuan</a>
-                      </li>
-                      <li>
-                        <a href="../info_cat/info_sukan.html">Sukan dan Permainan</a>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
+              <ul class="nav-main">
+                <li>
+                  <a class="active" th:href="@{/dashboardStudent}"><i class="si si-cup"></i><span class="sidebar-mini-hide">DASHBOARD</span></a>
+                </li>
+                <li>
+                  <a class="active" th:href="@{/edit_profile}"><i class="si si-user"></i><span class="sidebar-mini-hide">PROFIL</span></a>
+                </li>
+  
+                <li>
+                  <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="si si-note"></i><span class="sidebar-mini-hide">KOKURIKULUM</span></a>
+                  <ul>
+                    <li>
+                      <a th:href="@{/semasa}">Kokurikulum Semasa</a>
+                    </li>
+                    <li>
+                      <a th:href="@{/pendaftaran}">Pendaftaran Kokurikulum</a>
+                    </li>
+                    <li>
+                      <a th:href="@{/semakan}">Semakan Keputusan Pendaftaran</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="si si-layers"></i><span class="sidebar-mini-hide">KATEGORI</span></a>
+                  <ul>
+                    <li>
+                      <a th:href="@{/info_unit}">Unit Beruniform</a>
+                    </li>
+                    <li>
+                      <a th:href="@{/info_club}">Kelab dan Persatuan</a>
+                    </li>
+                    <li>
+                      <a th:href="@{/info_sukan}">Sukan dan Permainan</a>
+                    </li>
+                  </ul>
+                </li>
+            
+              </ul>
+            </div>
             <!-- END Side Navigation -->
           </div>
           <!-- END Sidebar Scrolling -->
@@ -817,7 +631,7 @@
               </button>
               <div class="dropdown-menu dropdown-menu-right min-width-200" aria-labelledby="page-header-user-dropdown">
                 <h5 class="h6 text-center py-10 mb-5 border-b text-uppercase">User</h5>
-                <a class="dropdown-item" href="../profileStud/edit_profile.html">
+                <a class="dropdown-item" th:href="@{/edit_profile}">
                   <i class="si si-user mr-5"></i> Profile
                 </a>
                 <div class="dropdown-divider"></div>
@@ -825,7 +639,7 @@
                 <!-- END Side Overlay -->
 
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="../sign-in/signIn.html">
+                <a class="dropdown-item" th:href="@{/signin}">
                   <i class="si si-logout mr-5"></i> Sign Out
                 </a>
               </div>
@@ -881,13 +695,13 @@
       <main id="main-container">
         <!-- Page Content -->
         <!-- User Info -->
-        <div class="bg-image bg-image-bottom" style="background-image: url('../assets/media/photos/photo13@2x.jpg');">
+        <div class="bg-image bg-image-bottom" style="background-image: url('stylesheets/assets/media/photos/photo13@2x.jpg');">
           <div class="bg-black-op-75 py-30">
             <div class="content content-full text-center">
               <!-- Avatar -->
               <div class="mb-15">
                 <a class="img-link" href="be_pages_generic_profile.html">
-                  <img class="img-avatar img-avatar96 img-avatar-thumb" src="../assets/media/avatars/avatar15.jpg" alt="">
+                  <img class="img-avatar img-avatar96 img-avatar-thumb" th:src="@{stylesheets/assets/media/avatars/avatar15.jpg}" alt="">
                 </a>
               </div>
               <!-- END Avatar -->
@@ -900,7 +714,7 @@
               <!-- END Personal -->
 
               <!-- Actions -->
-              <a href="../dashboard/dashboardStudent.html" class="btn btn-rounded btn-hero btn-sm btn-alt-secondary mb-5">
+              <a th:href="@{/dashboardStudent}" class="btn btn-rounded btn-hero btn-sm btn-alt-secondary mb-5">
                 <i class="fa fa-arrow-left mr-5"></i> Kembali
               </a>
               <!-- END Actions -->
@@ -930,7 +744,7 @@
                     <div class="form-group row">
                         <div class="col-md-10 col-xl-6">
                           <div class="push">
-                            <img class="img-avatar" src="../assets/media/avatars/avatar15.jpg" alt="">
+                            <img class="img-avatar" th:src="@{stylesheets/assets/media/avatars/avatar15.jpg}" alt="">
                           </div>
                           <div class="custom-file">
                             <!-- Populating custom file input label with the selected filename (data-toggle="custom-file-input" is initialized in Helpers.coreBootstrapCustomFileInput()) -->
@@ -1083,14 +897,20 @@
         assets/js/core/jquery.countTo.min.js
         assets/js/core/js.cookie.min.js
     -->
-    <script src="../assets/js/codebase.core.min.js"></script>
+    <script th:src="@{stylesheets/assets/js/codebase.core.min.js}"></script>
 
     <!--
         Codebase JS
-
+    
         Custom functionality including Blocks/Layout API as well as other vital and optional helpers
         webpack is putting everything together at assets/_js/main/app.js
     -->
-    <script src="../assets/js/codebase.app.min.js"></script>
+    <script th:src="@{stylesheets/assets/js/codebase.app.min.js}"></script>
+    
+    <!-- Page JS Plugins -->
+    <script th:src="@{stylesheets/assets/js/plugins/jquery-validation/jquery.validate.min.js}"></script>
+    
+    <!-- Page JS Code -->
+    <script th:src="@{stylesheets/assets/js/pages/op_auth_signin.min.js}"></script>
   </body>
 </html>
