@@ -76,6 +76,11 @@ public class GettingStartedApplication {
     public String semasa(){
         return "kokurikulum/semasa";
     }
+
+        @GetMapping("/pendaftaran")
+    public String registration(){
+        return "kokurikulum/pendaftaran";
+    }
   
 
 
