@@ -91,6 +91,11 @@ public class GettingStartedApplication {
     public String info_kelab(){
         return "kokurikulum/info_kelab";
     }
+
+           @GetMapping("/info_sukan")
+    public String info_sukan(){
+        return "kokurikulum/info_sukan";
+    }
   
   
 
