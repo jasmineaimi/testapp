@@ -37,6 +37,21 @@ public class GettingStartedApplication {
         return "index";
     }
 
+    @GetMapping("/AdminSignIn")
+    public String adminsignin() {
+        return "sign-in/AdminSignIn";
+    }
+
+     @GetMapping("/signInCoordinator")
+    public String coorsignin() {
+        return "sign-in/signInCorrdinator";
+    }
+
+     @GetMapping("/signin")
+    public String studentsignin() {
+        return "sign-in/signin";
+    }
+
     @GetMapping("/signup")
     public String about() {
         return "sign-in/signup";
