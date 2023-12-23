@@ -86,6 +86,11 @@ public class GettingStartedApplication {
     public String resultcheck(){
         return "kokurikulum/semakan";
     }
+
+          @GetMapping("/info_kelab")
+    public String info_kelab(){
+        return "kokurikulum/info_kelab";
+    }
   
   
 
