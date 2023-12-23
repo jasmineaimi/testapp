@@ -42,15 +42,15 @@ public class GettingStartedApplication {
         return "sign-in/AdminSignIn";
     }
 
-    //  @GetMapping("/signInCoordinator")
-    // public String coorsignin() {
-    //     return "sign-in/signInCoordinator";
-    // }
+     @GetMapping("/signInCoordinator")
+    public String coorsignin() {
+        return "sign-in/signInCoordinator";
+    }
 
-    //  @GetMapping("/signin")
-    // public String studentsignin() {
-    //     return "sign-in/signin";
-    // }
+     @GetMapping("/signin")
+    public String studentsignin() {
+        return "sign-in/signin";
+    }
 
     @GetMapping("/signup")
     public String about() {
