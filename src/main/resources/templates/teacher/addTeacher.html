@@ -20,30 +20,29 @@
 
     <!-- Icons -->
     <!-- The following icons can be replaced with your own, they are used by desktop and mobile browsers -->
-    <link rel="shortcut icon" href="../assets/media/favicons/favicon.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="../assets/media/favicons/favicon-192x192.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="../assets/media/favicons/apple-touch-icon-180x180.png">
+    <link rel="shortcut icon" th:href="@{stylesheet/assets/media/favicons/favicon.png}">
+    <link rel="icon" type="image/png" sizes="192x192" th:href="@{stylesheet/assets/media/favicons/favicon-192x192.png}">
+    <link rel="apple-touch-icon" sizes="180x180" th:href="@{stylesheet/assets/media/favicons/apple-touch-icon-180x180.png}">
     <!-- END Icons -->
 
     <!-- Stylesheets -->
 
-    <!-- Page JS Plugins CSS -->
-       <!-- Fonts and Codebase framework -->
-       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,400i,600,700&display=swap">
-       <link rel="stylesheet" id="css-main" th:href="@{stylesheets/assets/css/codebase.min.css}">
-       
-           <!-- You can include a specific file from css/themes/ folder to alter the default color theme of the template. eg: -->
-       <!-- <link rel="stylesheet" id="css-theme" th:href="../assets/css/themes/corporate.min.css"> -->
-       <link rel="stylesheet" id="css-theme" th:href="@{stylesheets/assets/css/themes/flat.min.css}"> 
-       <!-- <link rel="stylesheet" id="css-theme" th:href="../assets/css/themes/earth.min.css"> 
-       <!-- <link rel="stylesheet" id="css-theme" th:href="../assets/css/themes/elegance.min.css">
-       <link rel="stylesheet" id="css-theme" th:href="../assets/css/themes/pulse.min.css"> -->
-       
-       <!-- <link rel="stylesheet" id="css-theme" th:href="../assets/css/themes/elegance.min.css"> -->
-       
+    <!-- Fonts and Codebase framework -->
+    <link rel="stylesheet" th:href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,400i,600,700&display=swap">
+    <link rel="stylesheet" id="css-main" th:href="@{stylesheet/assets/css/codebase.min.css}">
+
        <!-- You can include a specific file from css/themes/ folder to alter the default color theme of the template. eg: -->
-       <!-- <link rel="stylesheet" id="css-theme" th:href="assets/css/themes/flat.min.css"> -->
-       <!-- END stylesheets -->
+     <!-- <link rel="stylesheet" id="css-theme" th:href="../assets/css/themes/corporate.min.css"> -->
+     <link rel="stylesheet" id="css-theme" th:href="@{stylesheet/assets/css/themes/flat.min.css}"> 
+     <!-- <link rel="stylesheet" id="css-theme" th:href="../assets/css/themes/earth.min.css"> 
+     <!-- <link rel="stylesheet" id="css-theme" th:href="../assets/css/themes/elegance.min.css">
+     <link rel="stylesheet" id="css-theme" th:href="../assets/css/themes/pulse.min.css"> -->
+     
+     <!-- <link rel="stylesheet" id="css-theme" th:href="../assets/css/themes/elegance.min.css"> -->
+
+    <!-- You can include a specific file from css/themes/ folder to alter the default color theme of the template. eg: -->
+    <!-- <link rel="stylesheet" id="css-theme" th:href="../assets/css/themes/flat.min.css"> -->
+    <!-- END Stylesheets -->
   </head>
   <body>
     <!-- Page Container -->
@@ -90,7 +89,7 @@
         'main-content-boxed'                        Full width Main Content with a specific maximum width (screen width > 1200px)
         'main-content-narrow'                       Full width Main Content with a percentage width (screen width > 1200px)
     -->
-    <div id="page-container" class="sidebar-o enable-page-overlay side-scroll page-header-modern main-content-boxed">
+    <div id="page-container" class="sidebar-o enable-page-overlay side-scroll main-content-boxed">
       <!-- Side Overlay-->
       <aside id="side-overlay">
         <!-- Side Header -->
@@ -105,10 +104,10 @@
 
             <!-- User Info -->
             <div class="content-header-item">
-              <a class="img-link mr-5" href="be_pages_generic_profile.html">
-                <img class="img-avatar img-avatar32" src="assets/media/avatars/avatar15.jpg" alt="">
+              <a class="img-link mr-5" th:href="@{profileCoordinator.html}">
+                <img class="img-avatar img-avatar32" th:src="@{stylesheet/assets/media/avatars/avatar15.jpg}" alt="">
               </a>
-              <a class="align-middle link-effect text-primary-dark font-w600" href="be_pages_generic_profile.html">John Smith</a>
+              <a class="align-middle link-effect text-primary-dark font-w600" th:href="@{profileCoordinator.html}">John Smith</a>
             </div>
             <!-- END User Info -->
           </div>
@@ -169,30 +168,30 @@
             <div class="block-content">
               <ul class="nav-users push">
                 <li>
-                  <a href="be_pages_generic_profile.html">
-                    <img class="img-avatar" src="../assets/media/avatars/avatar6.jpg" alt="">
-                    <i class="fa fa-circle text-success"></i> Alice Moore
+                  <a th:href="@{profileCoordinator.html}">
+                    <img class="img-avatar" th:src="@{stylesheet/assets/media/avatars/avatar3.jpg}" alt="">
+                    <i class="fa fa-circle text-success"></i> Danielle Jones
                     <div class="font-w400 font-size-xs text-muted">Photographer</div>
                   </a>
                 </li>
                 <li>
-                  <a href="be_pages_generic_profile.html">
-                    <img class="img-avatar" src="../assets/media/avatars/avatar12.jpg" alt="">
-                    <i class="fa fa-circle text-success"></i> Justin Hunt
+                  <a th:href="@{profileCoordinator.html}">
+                    <img class="img-avatar" th:src="@{stylesheet/assets/media/avatars/avatar15.jpg}" alt="">
+                    <i class="fa fa-circle text-success"></i> Jose Parker
                     <div class="font-w400 font-size-xs text-muted">Web Designer</div>
                   </a>
                 </li>
                 <li>
-                  <a href="be_pages_generic_profile.html">
-                    <img class="img-avatar" src="../assets/media/avatars/avatar6.jpg" alt="">
-                    <i class="fa fa-circle text-warning"></i> Marie Duncan
+                  <a th:href="@{profileCoordinator.html}">
+                    <img class="img-avatar" th:src="@{stylesheet/assets/media/avatars/avatar5.jpg}" alt="">
+                    <i class="fa fa-circle text-warning"></i> Laura Carr
                     <div class="font-w400 font-size-xs text-muted">UI Designer</div>
                   </a>
                 </li>
                 <li>
-                  <a href="be_pages_generic_profile.html">
-                    <img class="img-avatar" src="../assets/media/avatars/avatar13.jpg" alt="">
-                    <i class="fa fa-circle text-danger"></i> Ryan Flores
+                  <a th:href="@{profileCoordinator.html}">
+                    <img class="img-avatar" th:src="@{stylesheet/assets/media/avatars/avatar16.jpg}" alt="">
+                    <i class="fa fa-circle text-danger"></i> Justin Hunt
                     <div class="font-w400 font-size-xs text-muted">Copywriter</div>
                   </a>
                 </li>
@@ -220,7 +219,7 @@
                   <i class="si si-wallet text-success"></i>
                   <div class="font-w600">+$29 New sale</div>
                   <div>
-                    <a href="javascript:void(0)">Admin Template</a>
+                    <a th:href="javascript:void(0)">Admin Template</a>
                   </div>
                   <div class="font-size-xs text-muted">5 min ago</div>
                 </li>
@@ -228,7 +227,7 @@
                   <i class="si si-close text-danger"></i>
                   <div class="font-w600">Project removed</div>
                   <div>
-                    <a href="javascript:void(0)">Best Icon Set</a>
+                    <a th:href="javascript:void(0)">Best Icon Set</a>
                   </div>
                   <div class="font-size-xs text-muted">26 min ago</div>
                 </li>
@@ -236,7 +235,7 @@
                   <i class="si si-pencil text-info"></i>
                   <div class="font-w600">You edited the file</div>
                   <div>
-                    <a href="javascript:void(0)">
+                    <a th:href="javascript:void(0)">
                       <i class="fa fa-file-text-o"></i> Docs.doc
                     </a>
                   </div>
@@ -246,7 +245,7 @@
                   <i class="si si-plus text-success"></i>
                   <div class="font-w600">New user</div>
                   <div>
-                    <a href="javascript:void(0)">StudioWeb - View Profile</a>
+                    <a th:href="javascript:void(0)">StudioWeb - View Profile</a>
                   </div>
                   <div class="font-size-xs text-muted">5 hours ago</div>
                 </li>
@@ -254,7 +253,7 @@
                   <i class="si si-wrench text-warning"></i>
                   <div class="font-w600">App v5.5 is available</div>
                   <div>
-                    <a href="javascript:void(0)">Update now</a>
+                    <a th:href="javascript:void(0)">Update now</a>
                   </div>
                   <div class="font-size-xs text-muted">8 hours ago</div>
                 </li>
@@ -262,7 +261,7 @@
                   <i class="si si-user-follow text-pulse"></i>
                   <div class="font-w600">+1 Friend Request</div>
                   <div>
-                    <a href="javascript:void(0)">Accept</a>
+                    <a th:href="javascript:void(0)">Accept</a>
                   </div>
                   <div class="font-size-xs text-muted">1 day ago</div>
                 </li>
@@ -295,9 +294,9 @@
                   </div>
                 </div>
                 <div class="form-group mb-15">
-                  <label for="side-overlay-profile-email">Email</label>
+                  <label for="side-overlay-profile-text">Text</label>
                   <div class="input-group">
-                    <input type="email" class="form-control" id="side-overlay-profile-email" name="side-overlay-profile-email" placeholder="Your email.." value="john.smith@example.com">
+                    <input type="text" class="form-control" id="side-overlay-profile-text" name="side-overlay-profile-text" placeholder="Your text.." value="john.smith@example.com">
                     <div class="input-group-append">
                       <span class="input-group-text">
                         <i class="fa fa-envelope"></i>
@@ -426,7 +425,7 @@
 
               <!-- Logo -->
               <div class="content-header-item">
-                <img th:src="@{stylesheets/assets/pictures/logo lain.png}" style="width: 200px; height:45px;">                
+                <img th:src="@{stylesheet/pictures/logo lain.png}" style="width: 200px; height:45px;">                
               </div>
               <!-- END Logo -->
             </div>
@@ -440,27 +439,27 @@
             <div class="content-side content-side-full content-side-user px-10 align-parent">
               <!-- Visible only in mini mode -->
               <div class="sidebar-mini-visible-b align-v animated fadeIn">
-                <img class="img-avatar img-avatar32" th:src="@{stylesheets/assets/media/avatars/avatar15.jpg}" alt="">
+                <img class="img-avatar img-avatar32" th:src="@{stylesheet/assets/media/avatars/avatar15.jpg}" alt="">
               </div>
               <!-- END Visible only in mini mode -->
 
               <!-- Visible only in normal mode -->
               <div class="sidebar-mini-hidden-b text-center">
-                <a class="img-link" href="">
-                  <img class="img-avatar" th:src="@{stylesheets/assets/media/avatars/avatar15.jpg}" alt="">
+                <a class="img-link" th:href=".@{stylesheet/profil/profileCoordinator.html}">
+                  <img class="img-avatar" th:src="@{stylesheet/assets/media/avatars/avatar15.jpg}" alt="">
                 </a>
                 <ul class="list-inline mt-10">
                   <li class="list-inline-item">
-                    <a class="link-effect text-dual-primary-dark font-size-sm font-w600 text-uppercase" href="">Muhammad Sayf Furqan</a>
+                    <a class="link-effect text-dual-primary-dark font-size-sm font-w600 text-uppercase" th:href="@{stylesheet/profil/profileCoordinator.html}">Alif Ikmal</a>
                   </li>
                   <li class="list-inline-item">
                     <!-- Layout API, functionality initialized in Template._uiApiLayout() -->
-                    <a class="link-effect text-dual-primary-dark" data-toggle="layout" data-action="sidebar_style_inverse_toggle" href="javascript:void(0)">
+                    <a class="link-effect text-dual-primary-dark" data-toggle="layout" data-action="sidebar_style_inverse_toggle" th:href="javascript:void(0)">
                       <i class="si si-drop"></i>
                     </a>
                   </li>
                   <li class="list-inline-item">
-                    <a class="link-effect text-dual-primary-dark" th:href="@{/signIn}">
+                    <a class="link-effect text-dual-primary-dark" th:href="@{op_auth_signin.html}">
                       <i class="si si-logout"></i>
                     </a>
                   </li>
@@ -472,46 +471,45 @@
 
             <!-- Side Navigation -->
             <div class="content-side content-side-full">
-              <ul class="nav-main">
-                <li>
-                  <a class="active" th:href="@{/dashboardStudent}"><i class="si si-cup"></i><span class="sidebar-mini-hide">DASHBOARD</span></a>
-                </li>
-                <li>
-                  <a class="active" th:href="@{/edit_profile}"><i class="si si-user"></i><span class="sidebar-mini-hide">PROFIL</span></a>
-                </li>
-  
-                <li>
-                  <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="si si-note"></i><span class="sidebar-mini-hide">KOKURIKULUM</span></a>
-                  <ul>
-                    <li>
-                      <a th:href="@{/semasa}">Kokurikulum Semasa</a>
-                    </li>
-                    <li>
-                      <a th:href="@{/pendaftaran}">Pendaftaran Kokurikulum</a>
-                    </li>
-                    <li>
-                      <a th:href="@{/semakan}">Semakan Keputusan Pendaftaran</a>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="si si-layers"></i><span class="sidebar-mini-hide">KATEGORI</span></a>
-                  <ul>
-                    <li>
-                      <a th:href="@{/info_unit}">Unit Beruniform</a>
-                    </li>
-                    <li>
-                      <a th:href="@{/info_club}">Kelab dan Persatuan</a>
-                    </li>
-                    <li>
-                      <a th:href="@{/info_sukan}">Sukan dan Permainan</a>
-                    </li>
-                  </ul>
-                </li>
-            
-              </ul>
-            </div>
-            <!-- END Side Navigation -->
+                <ul class="nav-main">
+                  <li>
+                    <a class="active" th:href="@{stylesheet/dashboard/dashboardCoor.html}"><i class="si si-cup"></i><span class="sidebar-mini-hide">DASHBOARD</span></a>
+                  </li>
+                  <li>
+                    <a class="active" th:href="@{stylesheet/profil/profileCoordinatorEdit.html}"><i class="si si-user"></i><span class="sidebar-mini-hide">PROFIL</span></a>
+                  </li>
+                  <li>
+                    <a class="nav-submenu" data-toggle="nav-submenu" th:href="#"><i class="si si-note"></i><span class="sidebar-mini-hide">KOKURIKULUM</span></a>
+                    <ul>
+                      <li>
+                        <a th:href="@{stylesheet/kokurikulum/permohonanKokurikulum.html}">Permohonan Kokurikulum</a>
+                      </li>
+                      <li>
+                        <a th:href="@{stylesheet/kokurikulum/reassignKokurikulum.html}">Pemilihan Semula Kokurikulum Pelajar</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="nav-submenu" data-toggle="nav-submenu" th:href="#"><i class="si si-layers"></i><span class="sidebar-mini-hide">KATEGORI</span></a>
+                    <ul>
+                      <li>
+                        <a th:href="@{stylesheet/info_cat/info_unitCoor.html}">Unit Beruniform</a>
+                      </li>
+                      
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="nav-submenu" data-toggle="nav-submenu" th:href="#"><i class="si si-vector"></i><span class="sidebar-mini-hide">GURU PENYELARAS</span></a>
+                    <ul>
+                        <a th:href="@{stylesheet/teacher/assignTeacher.html}">Melantik Guru</a>
+                      </li>
+                      <li>
+                        <a th:href="@{stylesheet/teacher/listOfTeacherAssigned.html}" >Senarai Guru</a>
+                      </li>
+                    </ul>
+                  </li>
+                 
+                </ul>
           </div>
           <!-- END Sidebar Scrolling -->
         </div>
@@ -550,32 +548,32 @@
                 <h6 class="dropdown-header">Color Themes</h6>
                 <div class="row no-gutters text-center mb-5">
                   <div class="col-2 mb-5">
-                    <a class="text-default" data-toggle="theme" data-theme="default" href="javascript:void(0)">
+                    <a class="text-default" data-toggle="theme" data-theme="default" th:href="javascript:void(0)">
                       <i class="fa fa-2x fa-circle"></i>
                     </a>
                   </div>
                   <div class="col-2 mb-5">
-                    <a class="text-elegance" data-toggle="theme" data-theme="../assets/css/themes/elegance.min.css" href="javascript:void(0)">
+                    <a class="text-elegance" data-toggle="theme" data-theme="../assets/css/themes/elegance.min.css" th:href="javascript:void(0)">
                       <i class="fa fa-2x fa-circle"></i>
                     </a>
                   </div>
                   <div class="col-2 mb-5">
-                    <a class="text-pulse" data-toggle="theme" data-theme="../assets/css/themes/pulse.min.css" href="javascript:void(0)">
+                    <a class="text-pulse" data-toggle="theme" data-theme="../assets/css/themes/pulse.min.css" th:href="javascript:void(0)">
                       <i class="fa fa-2x fa-circle"></i>
                     </a>
                   </div>
                   <div class="col-2 mb-5">
-                    <a class="text-flat" data-toggle="theme" data-theme="../assets/css/themes/flat.min.css" href="javascript:void(0)">
+                    <a class="text-flat" data-toggle="theme" data-theme="../assets/css/themes/flat.min.css" th:href="javascript:void(0)">
                       <i class="fa fa-2x fa-circle"></i>
                     </a>
                   </div>
                   <div class="col-2 mb-5">
-                    <a class="text-corporate" data-toggle="theme" data-theme="../assets/css/themes/corporate.min.css" href="javascript:void(0)">
+                    <a class="text-corporate" data-toggle="theme" data-theme="../assets/css/themes/corporate.min.css" th:href="javascript:void(0)">
                       <i class="fa fa-2x fa-circle"></i>
                     </a>
                   </div>
                   <div class="col-2 mb-5">
-                    <a class="text-earth" data-toggle="theme" data-theme="../assets/css/themes/earth.min.css" href="javascript:void(0)">
+                    <a class="text-earth" data-toggle="theme" data-theme="../assets/css/themes/earth.min.css" th:href="javascript:void(0)">
                       <i class="fa fa-2x fa-circle"></i>
                     </a>
                   </div>
@@ -605,12 +603,12 @@
                 <div class="dropdown-divider"></div>
                 <div class="row gutters-tiny text-center">
                   <div class="col-6">
-                    <a class="dropdown-item mb-0" href="be_layout_api.html">
+                    <a class="dropdown-item mb-0" th:href="@{be_layout_api.html}">
                       <i class="si si-chemistry mr-5"></i> Layout API
                     </a>
                   </div>
                   <div class="col-6">
-                    <a class="dropdown-item mb-0" href="be_ui_color_themes.html">
+                    <a class="dropdown-item mb-0" th:href="@{be_ui_color_themes.html}">
                       <i class="fa fa-paint-brush mr-5"></i> Color Themes
                     </a>
                   </div>
@@ -627,25 +625,102 @@
             <div class="btn-group" role="group">
               <button type="button" class="btn btn-rounded btn-dual-secondary" id="page-header-user-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <i class="fa fa-user d-sm-none"></i>
-                <span class="d-none d-sm-inline-block">Muhammad Sayf Furqan</span>
+                <span class="d-none d-sm-inline-block">Alif Ikmal Bin Muhammad Amir</span>
                 <i class="fa fa-angle-down ml-5"></i>
               </button>
               <div class="dropdown-menu dropdown-menu-right min-width-200" aria-labelledby="page-header-user-dropdown">
                 <h5 class="h6 text-center py-10 mb-5 border-b text-uppercase">User</h5>
-                <a class="dropdown-item" href="../profileStud/edit_profile.html">
+                <a class="dropdown-item" th:href="@{stylesheet/profil/profileCoordinator.html}">
                   <i class="si si-user mr-5"></i> Profile
                 </a>
+                
                 <div class="dropdown-divider"></div>
-
-                <!-- END Side Overlay -->
-
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="../sign-in/signIn.html">
+                <a class="dropdown-item" th:href="@{stylesheet/sign-in/signInCoordinator.html}">
                   <i class="si si-logout mr-5"></i> Sign Out
                 </a>
               </div>
             </div>
             <!-- END User Dropdown -->
+
+            <!-- Notifications -->
+            <div class="btn-group" role="group">
+              <button type="button" class="btn btn-rounded btn-dual-secondary" id="page-header-notifications" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fa fa-flag"></i>
+                <span class="badge badge-primary badge-pill">5</span>
+              </button>
+              <div class="dropdown-menu dropdown-menu-right min-width-300" aria-labelledby="page-header-notifications">
+                <h5 class="h6 text-center py-10 mb-0 border-b text-uppercase">Notifications</h5>
+                <ul class="list-unstyled my-20">
+                  <li>
+                    <a class="text-body-color-dark media mb-15" th:href="javascript:void(0)">
+                      <div class="ml-5 mr-15">
+                        <i class="fa fa-fw fa-check text-success"></i>
+                      </div>
+                      <div class="media-body pr-10">
+                        <p class="mb-0">You’ve upgraded to a VIP account successfully!</p>
+                        <div class="text-muted font-size-sm font-italic">15 min ago</div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="text-body-color-dark media mb-15" th:href="javascript:void(0)">
+                      <div class="ml-5 mr-15">
+                        <i class="fa fa-fw fa-exclamation-triangle text-warning"></i>
+                      </div>
+                      <div class="media-body pr-10">
+                        <p class="mb-0">Please check your payment info since we can’t validate them!</p>
+                        <div class="text-muted font-size-sm font-italic">50 min ago</div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="text-body-color-dark media mb-15" th:href="javascript:void(0)">
+                      <div class="ml-5 mr-15">
+                        <i class="fa fa-fw fa-times text-danger"></i>
+                      </div>
+                      <div class="media-body pr-10">
+                        <p class="mb-0">Web server stopped responding and it was automatically restarted!</p>
+                        <div class="text-muted font-size-sm font-italic">4 hours ago</div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="text-body-color-dark media mb-15" th:href="javascript:void(0)">
+                      <div class="ml-5 mr-15">
+                        <i class="fa fa-fw fa-exclamation-triangle text-warning"></i>
+                      </div>
+                      <div class="media-body pr-10">
+                        <p class="mb-0">Please consider upgrading your plan. You are running out of space.</p>
+                        <div class="text-muted font-size-sm font-italic">16 hours ago</div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="text-body-color-dark media mb-15" th:href="javascript:void(0)">
+                      <div class="ml-5 mr-15">
+                        <i class="fa fa-fw fa-plus text-primary"></i>
+                      </div>
+                      <div class="media-body pr-10">
+                        <p class="mb-0">New purchases! +$250</p>
+                        <div class="text-muted font-size-sm font-italic">1 day ago</div>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item text-center mb-0" th:href="javascript:void(0)">
+                  <i class="fa fa-flag mr-5"></i> View All
+                </a>
+              </div>
+            </div>
+            <!-- END Notifications -->
+
+            <!-- Toggle Side Overlay -->
+            <!-- Layout API, functionality initialized in Template._uiApiLayout() -->
+            <button type="button" class="btn btn-circle btn-dual-secondary" data-toggle="layout" data-action="side_overlay_toggle">
+              <i class="fa fa-tasks"></i>
+            </button>
+            <!-- END Toggle Side Overlay -->
           </div>
           <!-- END Right Section -->
         </div>
@@ -689,152 +764,184 @@
       </header>
       <!-- END Header -->
 
-      <!-- Main Container -->
-      <main id="main-container">
-        <!-- Page Content -->
-        <div class="content">
-          <div class="block" >
-            <!-- Row #1 -->
-            <div class="block-header block-header-default">
-              <h3 class="block-title">
-                <b> SELAMAT DATANG KE E-CURRICULAR ! </b>
-              </h3>
+       <!-- Main Content -->
+       <div class="content">
+        <!-- Register guru-->
+        <div class="block">
+          <div class="block-header block-header-default">
+            <h3 class="block-title">
+              <i class="fa fa-group mr-5 text-muted"></i> PENDAFTARAN GURU UNIT UNIFORM
+            </h3>
+          </div>
+          <div class="block-content">
+                  <div class="row">
+                      <div class="col-md-12">
+                                        <form action="be_forms_elements_bootstrap.html" method="post" onsubmit="return false;">
+                                            <p class="font-italic" style="color:red "> Ruang bertanda * wajib diisi</p>
+                                            <div class="form-group row">
+                                                <label class="col-lg-3 col-form-label" for="example-hf-text">Nama</label><span style="color:red">*</span>
+                                                <div class="col-md-7">
+                                                    <input type="text" class="form-control" id="example-hf-text" name="example-hf-text">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label class="col-lg-3 col-form-label" for="example-hf-text">Nombor Kad Pengenalan</label><span style="color:red">*</span>
+                                                <div class="col-md-7">
+                                                    <input type="text" class="form-control" id="example-hf-text" name="example-hf-text">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label class="col-lg-3 col-form-label" for="example-hf-text">Email</label><span style="color:red">*</span>
+                                                <div class="col-md-7">
+                                                    <input type="text" class="form-control" id="example-hf-text" name="example-hf-text">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label class="col-lg-3 col-form-label" for="example-hf-text">Nombor Pekerja</label><span style="color:red">*</span>
+                                                <div class="col-md-7">
+                                                    <input type="text" class="form-control" id="example-hf-text" name="example-hf-text">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label class="col-lg-3 col-form-label" for="example-hf-text">Nombor Kad Pengenalan</label><span style="color:red">*</span>
+                                                <div class="col-md-7">
+                                                    <input type="text" class="form-control" id="example-hf-text" name="example-hf-text">
+                                                </div>
+                                            </div>
+                                              <div class="form-group row">
+                                                <div class="col-lg-4 ml-auto">
+                                                    <button type="submit" class="btn btn-alt-primary" data-toggle="modal" data-target="#simpan-guru">Simpan</button>
+                                                </div>
+                                                <div class="col-lg-4 ml-auto mr-auto">
+                                                    <button type="submit" class="btn btn-alt-danger float-right" data-toggle="modal" data-target="#delete-info">Set Semula</button>
+                                                </div>
+                                            </div>
+                                             <!-- Create Modal Delete-->
+                                             <div class="modal fade" id="delete-info" tabindex="-1" role="dialog" aria-labelledby="modal-create-pekerjaan"
+                                             aria-hidden="true">
+                                             <div class="modal-dialog modal-lg-5" role="document">
+                                                 <div class="modal-content">
+                                                     <div class="block block-themed block-transparent mb-0">
+                                                         <div class="block-header bg-primary-dark">
+                                                             <h3 class="block-title">Set Semula Pendaftaran Guru</h3>
+                                                             <div class="block-options">
+                                                                 <button type="button" class="btn-block-option" data-dismiss="modal" aria-label="Close">
+                                                                     <i class="si si-close"></i>
+                                                                 </button>
+                                                             </div>
+                                                         </div>
+                                                         <div class="block-content">
+                                                             <form class="js-validation-bootstrap" method="post">
+                                                                 <input type="hidden" name="id_profile" id="id_profile" value="<?php echo $row['id'] ?>">
+                                                                 <div class="form-group row">
+                                                                     <label class="col-lg-12 col-form-label" for="title">
+                                                                         <p>Maklumat ini akan <b>dipadam</b>.<br><br />Adakah anda
+                                                                             pasti?</p>
+                                                                     </label>
+                                         
+                                                                 </div>
+                                         
+                                                                 <div class="modal-footer">
+                                                                     <button type="button" class="btn btn-alt-secondary" data-dismiss="modal"><i
+                                                                             class="si si-close mr-10"></i>Tutup</button>
+                                                                     <button type="submit" name="delete_document" class="btn btn-alt-danger" data-dismiss="modal"><i
+                                                                             class="fa fa-trash"></i> Padam</button>
+                                                                 </div>
+                                                             </form>
+                                                         </div>
+                                                     </div>
+                                                 </div>
+                                             </div>
+                                         </div>
+                                         <!-- END Create Modal -->
+                                         <!-- Create Modal Hantar-->
+      <div class="modal fade" id="simpan-guru" tabindex="-1" role="dialog" aria-labelledby="modal-create-pekerjaan"
+      aria-hidden="true">
+      <div class="modal-dialog modal-lg-5" role="document">
+          <div class="modal-content">
+              <div class="block block-themed block-transparent mb-0">
+                  <div class="block-header bg-primary-dark">
+                      <h3 class="block-title">Simpan Maklumat Guru</h3>
+                      <div class="block-options">
+                          <button type="button" class="btn-block-option" data-dismiss="modal" aria-label="Close">
+                              <i class="si si-close"></i>
+                          </button>
+                      </div>
+                  </div>
+                  <div class="block-content">
+                      <form class="js-validation-bootstrap" method="post">
+                          <input type="hidden" name="id_profile" id="id_profile" value="<?php echo $row['id'] ?>">
+                          <div class="form-group row">
+                              <label class="col-lg-12 col-form-label" for="title">
+                                  <p>Maklumat ini tidak boleh dikemaskini setelah <b>disimpan</b>.<br><br />Adakah anda
+                                      pasti?</p>
+                              </label>
+  
+                          </div>
+  
+                          <div class="modal-footer">
+                              <button type="button" class="btn btn-alt-secondary" data-dismiss="modal"><i
+                                      class="si si-close mr-10"></i>Tutup</button>
+                              <button type="submit" name="delete_document" class="btn btn-alt-success" data-dismiss="modal"><i
+                                      class="fa fa-check-square-o"></i> Simpan</button>
+                          </div>
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- END Create Modal -->
+                                        </form>
+                                    </div>
+                            </div>
+                <!-- END ROW -->
             </div>
-            <div class="block-content mb-10">
-            <img src="../pictures/organisasi chart.png" style="width: 1025px; height:700px;">
-          </div>
-            <!-- END Row #1 -->
-          </div>
-          <div class="row invisible" data-toggle="appear">
-            <!-- Row #2 -->
-            <!-- END Row #2 -->
-          </div>
-          
-          <div class="row invisible" data-toggle="appear">
-            <!-- Row #4 -->
-            <!-- END Row #4 -->
-          </div>
+            <!--BLOCK CONTENT-->
         </div>
-        <!-- END Page Content -->
-      </main>
-      <!-- END Main Container -->
-
+        <!--END REGISTER TEACHER-->
+    </div>
+     <!-- END Content -->
       <!-- Footer -->
       <footer id="page-footer">
         <div class="content py-20 font-size-sm clearfix">
           <div class="float-right">
-            Dibangunkan <i class="fa fa-heart text-pulse"></i> oleh <a class="font-w600" href="https://1.envato.market/ydb" target="_blank">That's It</a>
+            Dibangunkan <i class="fa fa-heart text-pulse"></i> oleh <a class="font-w600" th:href="https://1.envato.market/ydb" target="_blank">That's It</a>
           </div>
           <div class="float-left">
-            <a class="font-w600" href="" target="_blank">E-Curricular System</a> &copy; <span class="js-year-copy"></span>
+            <a class="font-w600" th:href="" target="_blank">E-Curricular System</a> &copy; <span class="js-year-copy"></span>
           </div>
         </div>
       </footer>
       <!-- END Footer -->
     </div>
     <!-- END Page Container -->
-
-    <!-- Onboarding Modal functionality is initialized in js/pages/be_pages_dashboard.min.js which was auto compiled from _js/pages/be_pages_dashboard.js -->
-    <!-- <div class="modal fade" id="modal-onboarding" tabindex="-1" role="dialog" aria-labelledby="modal-onboarding" aria-hidden="true">
-      <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-popout" role="document">
-        <div class="modal-content rounded">
-          <div class="block block-rounded block-transparent mb-0 bg-pattern" style="background-image: url('assets/media/various/bg-pattern-inverse.png');">
-            <div class="block-header justify-content-end">
-              <div class="block-options">
-                <a class="font-w600 text-danger" href="#" data-dismiss="modal" aria-label="Close">
-                  Skip Intro
-                </a>
-              </div>
-            </div>
-            <div class="block-content block-content-full">
-              <div class="js-slider slick-dotted-inner" data-dots="true" data-arrows="false" data-infinite="false">
-                <div class="pb-50">
-                  <div class="row justify-content-center text-center">
-                    <div class="col-md-10 col-lg-8">
-                      <i class="si si-fire fa-4x text-primary"></i>
-                      <h3 class="font-size-h2 font-w300 mt-20">Welcome to Codebase!</h3>
-                      <p class="text-muted">
-                        This is a modal you can show to your users when they first sign in to their dashboard. It is a great place to welcome and introduce them to your application and its functionality.
-                      </p>
-                      <button type="button" class="btn btn-sm btn-hero btn-noborder btn-primary mb-10 mx-5" onclick="jQuery('.js-slider').slick('slickGoTo', 1);">
-                        Key features <i class="fa fa-arrow-right ml-5"></i>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-                <div class="slick-slide pb-50">
-                  <div class="row justify-content-center">
-                    <div class="col-md-10 col-lg-8">
-                      <h3 class="font-size-h2 font-w300 mb-5">Backup</h3>
-                      <p class="text-muted">
-                        Backups are taken with every new change to ensure complete piece of mind. They are kept safe for immediate restores.
-                      </p>
-                      <h3 class="font-size-h2 font-w300 mb-5">Invoices</h3>
-                      <p class="text-muted">
-                        They are sent automatically to your clients with the completion of every project, so you don't have to worry about getting paid.
-                      </p>
-                      <div class="text-center">
-                        <button type="button" class="btn btn-sm btn-hero btn-noborder btn-primary mb-10 mx-5" onclick="jQuery('.js-slider').slick('slickGoTo', 2);">
-                          Complete Profile <i class="fa fa-arrow-right ml-5"></i>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="slick-slide pb-50">
-                  <div class="row justify-content-center text-center">
-                    <div class="col-md-10 col-lg-8">
-                      <i class="si si-note fa-4x text-primary"></i>
-                      <h3 class="font-size-h2 font-w300 mt-20">Finally, let us know your name</h3>
-                      <form class="push">
-                        <input type="text" class="form-control form-control-lg py-20 border-2x" id="onboard-first-name" name="onboard-first-name" placeholder="Enter your first name..">
-                      </form>
-                      <button type="button" class="btn btn-sm btn-hero btn-noborder btn-success mb-10 mx-5" data-dismiss="modal" aria-label="Close">
-                        Get Started <i class="fa fa-check ml-5"></i>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
-    <!-- END Onboarding Modal -->
-
-
-    <!--
-        Codebase JS Core
-
-        Vital libraries and plugins used in all pages. You can choose to not include this file if you would like
-        to handle those dependencies through webpack. Please check out assets/_js/main/bootstrap.js for more info.
-
-        If you like, you could also include them separately directly from the assets/js/core folder in the following
-        order. That can come in handy if you would like to include a few of them (eg jQuery) from a CDN.
-
-        assets/js/core/jquery.min.js
-        assets/js/core/bootstrap.bundle.min.js
-        assets/js/core/simplebar.min.js
-        assets/js/core/jquery-scrollLock.min.js
-        assets/js/core/jquery.appear.min.js
-        assets/js/core/jquery.countTo.min.js
-        assets/js/core/js.cookie.min.js
-    -->
-    <script th:src="@{stylesheets/assets/js/codebase.core.min.js}"></script>
-
-    <!--
-        Codebase JS
-    
-        Custom functionality including Blocks/Layout API as well as other vital and optional helpers
-        webpack is putting everything together at assets/_js/main/app.js
-    -->
-    <script th:src="@{stylesheets/assets/js/codebase.app.min.js}"></script>
-    
-    <!-- Page JS Plugins -->
-    <script th:src="@{stylesheets/assets/js/plugins/jquery-validation/jquery.validate.min.js}"></script>
-    
-    <!-- Page JS Code -->
-    <script th:src="@{stylesheets/assets/js/pages/op_auth_signin.min.js}"></script>
-  </body>
-</html>
+  
+      <!--
+          Codebase JS Core
+  
+          Vital libraries and plugins used in all pages. You can choose to not include this file if you would like
+          to handle those dependencies through webpack. Please check out ../assets/_js/main/bootstrap.js for more info.
+  
+          If you like, you could also include them separately directly from the ../assets/js/core folder in the following
+          order. That can come in handy if you would like to include a few of them (eg jQuery) from a CDN.
+  
+          ../assets/js/core/jquery.min.js
+          ../assets/js/core/bootstrap.bundle.min.js
+          ../assets/js/core/simplebar.min.js
+          ../assets/js/core/jquery-scrollLock.min.js
+          ../assets/js/core/jquery.appear.min.js
+          ../assets/js/core/jquery.countTo.min.js
+          ../assets/js/core/js.cookie.min.js
+      -->
+      <script th:src="@{stylesheet/assets/js/codebase.core.min.js}"></script>
+  
+      <!--
+          Codebase JS
+  
+          Custom functionality including Blocks/Layout API as well as other vital and optional helpers
+          webpack is putting everything together at ../assets/_js/main/app.js
+      -->
+      <script th:src="@{stylesheet/assets/js/codebase.app.min.js}"></script>
+    </body>
+  </html>
