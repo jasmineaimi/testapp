@@ -20,30 +20,29 @@
 
     <!-- Icons -->
     <!-- The following icons can be replaced with your own, they are used by desktop and mobile browsers -->
-    <link rel="shortcut icon" href="../assets/media/favicons/favicon.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="../assets/media/favicons/favicon-192x192.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="../assets/media/favicons/apple-touch-icon-180x180.png">
+    <link rel="shortcut icon" th:href="@{stylesheets/assets/media/favicons/favicon.png}">
+    <link rel="icon" type="image/png" sizes="192x192" th:href="@{stylesheets/assets/media/favicons/favicon-192x192.png}">
+    <link rel="apple-touch-icon" sizes="180x180" th:href="@{stylesheets/assets/media/favicons/apple-touch-icon-180x180.png}">
     <!-- END Icons -->
-
-    <!-- Stylesheets -->
-
-    <!-- Page JS Plugins CSS -->
-       <!-- Fonts and Codebase framework -->
-       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,400i,600,700&display=swap">
-       <link rel="stylesheet" id="css-main" th:href="@{stylesheets/assets/css/codebase.min.css}">
-       
-           <!-- You can include a specific file from css/themes/ folder to alter the default color theme of the template. eg: -->
-       <!-- <link rel="stylesheet" id="css-theme" th:href="../assets/css/themes/corporate.min.css"> -->
-       <link rel="stylesheet" id="css-theme" th:href="@{stylesheets/assets/css/themes/flat.min.css}"> 
-       <!-- <link rel="stylesheet" id="css-theme" th:href="../assets/css/themes/earth.min.css"> 
-       <!-- <link rel="stylesheet" id="css-theme" th:href="../assets/css/themes/elegance.min.css">
-       <link rel="stylesheet" id="css-theme" th:href="../assets/css/themes/pulse.min.css"> -->
-       
-       <!-- <link rel="stylesheet" id="css-theme" th:href="../assets/css/themes/elegance.min.css"> -->
-       
-       <!-- You can include a specific file from css/themes/ folder to alter the default color theme of the template. eg: -->
-       <!-- <link rel="stylesheet" id="css-theme" th:href="assets/css/themes/flat.min.css"> -->
-       <!-- END stylesheets -->
+    
+    <!-- stylesheets -->
+    
+    <!-- Fonts and Codebase framework -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,400i,600,700&display=swap">
+    <link rel="stylesheet" id="css-main" th:href="@{stylesheets/assets/css/codebase.min.css}">
+    
+        <!-- You can include a specific file from css/themes/ folder to alter the default color theme of the template. eg: -->
+    <!-- <link rel="stylesheet" id="css-theme" th:href="../assets/css/themes/corporate.min.css"> -->
+    <link rel="stylesheet" id="css-theme" th:href="@{stylesheets/assets/css/themes/flat.min.css}"> 
+    <!-- <link rel="stylesheet" id="css-theme" th:href="../assets/css/themes/earth.min.css"> 
+    <!-- <link rel="stylesheet" id="css-theme" th:href="../assets/css/themes/elegance.min.css">
+    <link rel="stylesheet" id="css-theme" th:href="../assets/css/themes/pulse.min.css"> -->
+    
+    <!-- <link rel="stylesheet" id="css-theme" th:href="../assets/css/themes/elegance.min.css"> -->
+    
+    <!-- You can include a specific file from css/themes/ folder to alter the default color theme of the template. eg: -->
+    <!-- <link rel="stylesheet" id="css-theme" th:href="assets/css/themes/flat.min.css"> -->
+    <!-- END stylesheets -->
   </head>
   <body>
     <!-- Page Container -->
@@ -632,7 +631,7 @@
               </button>
               <div class="dropdown-menu dropdown-menu-right min-width-200" aria-labelledby="page-header-user-dropdown">
                 <h5 class="h6 text-center py-10 mb-5 border-b text-uppercase">User</h5>
-                <a class="dropdown-item" href="../profileStud/edit_profile.html">
+                <a class="dropdown-item" th:href="@{/edit_profile}">
                   <i class="si si-user mr-5"></i> Profile
                 </a>
                 <div class="dropdown-divider"></div>
@@ -640,7 +639,7 @@
                 <!-- END Side Overlay -->
 
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="../sign-in/signIn.html">
+                <a class="dropdown-item" th:href="@{/signin}">
                   <i class="si si-logout mr-5"></i> Sign Out
                 </a>
               </div>
@@ -701,7 +700,7 @@
               </h3>
             </div>
             <div class="block-content mb-10">
-            <img src="../pictures/organisasi chart.png" style="width: 1025px; height:700px;">
+            <img th:src="@{stylesheets/assets/pictures/organisasi chart.png}" style="width: 1025px; height:700px;">
           </div>
             <!-- END Row #1 -->
           </div>
