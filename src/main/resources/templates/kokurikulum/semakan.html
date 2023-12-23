@@ -425,7 +425,7 @@
 
               <!-- Logo -->
               <div class="content-header-item">
-                <img src="../pictures/logo lain.png" style="width: 200px; height:45px;">                
+                <img th:src="@{stylesheets/assets/pictures/logo lain.png}" style="width: 200px; height:45px;">                
               </div>
               <!-- END Logo -->
             </div>
@@ -439,14 +439,14 @@
             <div class="content-side content-side-full content-side-user px-10 align-parent">
               <!-- Visible only in mini mode -->
               <div class="sidebar-mini-visible-b align-v animated fadeIn">
-                <img class="img-avatar img-avatar32" src="../assets/media/avatars/avatar15.jpg" alt="">
+                <img class="img-avatar img-avatar32" th:src="@{stylesheets/assets/media/avatars/avatar15.jpg}" alt="">
               </div>
               <!-- END Visible only in mini mode -->
 
               <!-- Visible only in normal mode -->
               <div class="sidebar-mini-hidden-b text-center">
                 <a class="img-link" href="be_pages_generic_profile.html">
-                  <img class="img-avatar" src="../assets/media/avatars/avatar15.jpg" alt="">
+                  <img class="img-avatar" th:src="@{stylesheets/assets/media/avatars/avatar15.jpg}" alt="">
                 </a>
                 <ul class="list-inline mt-10">
                   <li class="list-inline-item">
@@ -459,7 +459,7 @@
                     </a>
                   </li>
                   <li class="list-inline-item">
-                    <a class="link-effect text-dual-primary-dark" href="../sign-in/signIn.html">
+                    <a class="link-effect text-dual-primary-dark"  th:href="@{/signin}">
                       <i class="si si-logout"></i>
                     </a>
                   </li>
@@ -471,43 +471,45 @@
 
             <!-- Side Navigation -->
             <div class="content-side content-side-full">
-                <ul class="nav-main">
-                  <li>
-                    <a class="active" href="../dashboard/dashboardStudent.html"><i class="si si-cup"></i><span class="sidebar-mini-hide">DASHBOARD</span></a>
-                  </li>
-                  <li>
-                    <a class="active" href="../profileStud/edit_profile.html"><i class="si si-user"></i><span class="sidebar-mini-hide">PROFIL</span></a>
-                  </li>
-                  <li>
-                    <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="si si-note"></i><span class="sidebar-mini-hide">KOKURIKULUM</span></a>
-                    <ul>
-                      <li>
-                        <a href="../kokurikulum/semasa.html">Kokurikulum Semasa</a>
-                      </li>
-                      <li>
-                        <a href="../kokurikulum/pendaftaran.html">Pendaftaran Kokurikulum</a>
-                      </li>
-                      <li>
-                        <a href="../kokurikulum/semakan.html">Semakan Keputusan Pendaftaran</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="si si-layers"></i><span class="sidebar-mini-hide">KATEGORI</span></a>
-                    <ul>
-                      <li>
-                        <a href="../info_cat/info_unit.html">Unit Beruniform</a>
-                      </li>
-                      <li>
-                        <a href="../info_cat/info_kelab.html">Kelab dan Persatuan</a>
-                      </li>
-                      <li>
-                        <a href="../info_cat/info_sukan.html">Sukan dan Permainan</a>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
+              <ul class="nav-main">
+                <li>
+                  <a class="active" th:href="@{/dashboardStudent}"><i class="si si-cup"></i><span class="sidebar-mini-hide">DASHBOARD</span></a>
+                </li>
+                <li>
+                  <a class="active" th:href="@{/edit_profile}"><i class="si si-user"></i><span class="sidebar-mini-hide">PROFIL</span></a>
+                </li>
+  
+                <li>
+                  <a class="nav-submenu" data-toggle="nav-submenu" href=""><i class="si si-note"></i><span class="sidebar-mini-hide">KOKURIKULUM</span></a>
+                  <ul>
+                    <li>
+                      <a th:href="@{/semasa}">Kokurikulum Semasa</a>
+                    </li> 
+                    <li>
+                      <a th:href="@{/pendaftaran}">Pendaftaran Kokurikulum</a>
+                    </li>
+                    <li>
+                      <a th:href="@{/semakan}">Semakan Keputusan Pendaftaran</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="si si-layers"></i><span class="sidebar-mini-hide">KATEGORI</span></a>
+                  <ul>
+                    <li>
+                      <a th:href="@{/info_unit}">Unit Beruniform</a>
+                    </li>
+                    <li>
+                      <a th:href="@{/info_club}">Kelab dan Persatuan</a>
+                    </li>
+                    <li>
+                      <a th:href="@{/info_sukan}">Sukan dan Permainan</a>
+                    </li>
+                  </ul>
+                </li>
+            
+              </ul>
+            </div>
             <!-- END Side Navigation -->
           </div>
           <!-- END Sidebar Scrolling -->
@@ -629,7 +631,7 @@
               </button>
               <div class="dropdown-menu dropdown-menu-right min-width-200" aria-labelledby="page-header-user-dropdown">
                 <h5 class="h6 text-center py-10 mb-5 border-b text-uppercase">User</h5>
-                <a class="dropdown-item" href="../profileStud/edit_profile.html">
+                <a class="dropdown-item" th:href="@{/edit_profile}">
                   <i class="si si-user mr-5"></i> Profile
                 </a>
                 <div class="dropdown-divider"></div>
@@ -637,7 +639,7 @@
                 <!-- END Side Overlay -->
 
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="../sign-in/signIn.html">
+                <a class="dropdown-item" th:href="@{/signin}">
                   <i class="si si-logout mr-5"></i> Sign Out
                 </a>
               </div>
@@ -710,7 +712,7 @@
                         <div class="form-group row ">
                             <div class="col-md-10 col-xl-6">
                               <div class="row mr-auto ml-auto ">
-                                <img class="img-avatar" src="../assets/media/avatars/avatar15.jpg" alt="">
+                                <img class="img-avatar" th:src="@{stylesheets/assets/media/avatars/avatar15.jpg}" alt="">
                               </div>
                             </div>
                           </div>
@@ -795,7 +797,7 @@
                                     <div class="row">
                                         <div class="col-lg-12 text-center mb-50">
                                             <form action="" method="post" >
-                                                <a type="button" name="back" href ="../dashboard/dashboardStudent.html" class="btn btn-square btn-alt-success" style="width: 20%;">Kembali</a>
+                                                <a type="button" name="back" th:href ="@{/dashboardStudent}" class="btn btn-square btn-alt-success" style="width: 20%;">Kembali</a>
                                             </form>
                                         </div>
                                     </div>
@@ -855,14 +857,20 @@
         assets/js/core/jquery.countTo.min.js
         assets/js/core/js.cookie.min.js
     -->
-    <script src="../assets/js/codebase.core.min.js"></script>
+    <script th:src="@{stylesheets/assets/js/codebase.core.min.js}"></script>
 
     <!--
         Codebase JS
-
+    
         Custom functionality including Blocks/Layout API as well as other vital and optional helpers
         webpack is putting everything together at assets/_js/main/app.js
     -->
-    <script src="../assets/js/codebase.app.min.js"></script>
+    <script th:src="@{stylesheets/assets/js/codebase.app.min.js}"></script>
+    
+    <!-- Page JS Plugins -->
+    <script th:src="@{stylesheets/assets/js/plugins/jquery-validation/jquery.validate.min.js}"></script>
+    
+    <!-- Page JS Code -->
+    <script th:src="@{stylesheets/assets/js/pages/op_auth_signin.min.js}"></script>
   </body>
 </html>
