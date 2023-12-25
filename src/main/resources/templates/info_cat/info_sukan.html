@@ -18,7 +18,6 @@
     <meta property="og:url" content="">
     <meta property="og:image" content="">
 
-    <!-- Icons -->
      <!-- Icons -->
     <!-- The following icons can be replaced with your own, they are used by desktop and mobile browsers -->
     <link rel="shortcut icon" th:href="@{stylesheets/assets/media/favicons/favicon.png}">
@@ -106,7 +105,7 @@
             <!-- User Info -->
             <div class="content-header-item">
               <a class="img-link mr-5" href="be_pages_generic_profile.html">
-                <img class="img-avatar img-avatar32" src="../assets/media/avatars/avatar15.jpg" alt="">
+                <img class="img-avatar img-avatar32" th:src="@{stylesheets/assets/media/avatars/avatar15.jpg}" alt="">
               </a>
               <a class="align-middle link-effect text-primary-dark font-w600" href="be_pages_generic_profile.html">John Smith</a>
             </div>
@@ -440,14 +439,14 @@
             <div class="content-side content-side-full content-side-user px-10 align-parent">
               <!-- Visible only in mini mode -->
               <div class="sidebar-mini-visible-b align-v animated fadeIn">
-                <img class="img-avatar img-avatar32" th:src="@{stylesheets/assets/pictures/logo lain.png}" alt="">
+                <img class="img-avatar img-avatar32" th:src="@{stylesheets/assets/media/avatars/avatar15.jpg}" alt="">
               </div>
               <!-- END Visible only in mini mode -->
 
               <!-- Visible only in normal mode -->
               <div class="sidebar-mini-hidden-b text-center">
                 <a class="img-link" href="be_pages_generic_profile.html">
-                  <img class="img-avatar" th:src="@{stylesheets/assets/pictures/logo lain.png}" alt="">
+                  <img class="img-avatar img-avatar32" th:src="@{stylesheets/assets/media/avatars/avatar15.jpg}" alt="">
                 </a>
                 <ul class="list-inline mt-10">
                   <li class="list-inline-item">
@@ -704,7 +703,7 @@
           <div class="block">
             <div class="block-header block-header-default">
               <h3 class="block-title">
-                <i class="fa fa-group mr-5 text-muted"></i> MAKLUMAT SUKAN DAN PERMAINAN
+                <i class="fa fa-group mr-5 text-muted"></i> MAKLUMAT KELAB DAN PERSATUAN
               </h3>
             </div>
             <div class="block-content">
@@ -731,12 +730,12 @@
                                         </tr>
                                         <tr>
                                             <td style="width: 250px;" >Penyelaras Sukan dan Permainan</td>
-                                            <td style="width: 550px;">EN ZIAOR RAHMAN BIN OTHMAN
+                                            <td style="width: 550px;"> ENCIK ZIAOR RAHMAN BIN OTHMAN
                                             </td>
                                         </tr>
                                         <tr>
                                             <td style="width: 250px;">Senarai Sukan dan Permainan Terkini</td>
-                                            <td style="width: 550px;">(1) Bola Jaring<br>(2) Bola Baling<br>(3) Bola Sepak<br>(4) Sepak Takraw<br>(5) Bola Tampar
+                                            <td style="width: 550px;">(1)Kelab Kesenian dan Kebudayaan<br>(2)Kelab Basa Melayu<br>(3)Kelab Bahasa Cina<br>(4)Kelab Fotografi<br>(5)Kelab Komputer
                                             </td>
                                         </tr>
                                         <tr>
@@ -753,7 +752,7 @@
                         <div class="row">
                             <div class="col-lg-12 text-center mb-50">
                                 <form action="" method="post" >
-                                    <a type="button" name="back" th:href="{@/dashboardStudent}" class="btn btn-square btn-alt-success" style="width: 20%;">Kembali</a>
+                                  <a type="button" name="back" th:href ="@{/dashboardStudent}" class="btn btn-square btn-alt-success" style="width: 20%;">Kembali</a>
                                 </form>
                             </div>
                         </div>
@@ -822,6 +821,6 @@
     <script th:src="@{stylesheets/assets/js/plugins/jquery-validation/jquery.validate.min.js}"></script>
     
     <!-- Page JS Code -->
-    <script th:src="@{stylesheets/assets/js/pages/op_auth_signin.min.js}"></script> 
+    <script th:src="@{stylesheets/assets/js/pages/op_auth_signin.min.js}"></script>
   </body>
 </html>
