@@ -89,12 +89,12 @@ public class GettingStartedApplication {
 
           @GetMapping("/info_kelab")
     public String info_kelab(){
-        return "kokurikulum/info_kelab";
+        return "info_cat/info_kelab";
     }
 
            @GetMapping("/info_sukan")
     public String info_sukan(){
-        return "kokurikulum/info_sukan";
+        return "info_cat/info_sukan";
     }
   
   
