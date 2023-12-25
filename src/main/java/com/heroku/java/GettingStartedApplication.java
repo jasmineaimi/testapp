@@ -96,6 +96,12 @@ public class GettingStartedApplication {
     public String info_sukan(){
         return "info_cat/info_sukan";
     }
+
+    
+           @GetMapping("/info_unit")
+    public String info_unit(){
+        return "info_cat/info_unit";
+    }
   
   
 
