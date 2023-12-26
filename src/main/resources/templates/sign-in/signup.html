@@ -126,7 +126,7 @@
                 <!-- Sign Up Form -->
                 <!-- jQuery Validation functionality is initialized with .js-validation-signup class in js/pages/op_auth_signup.min.js which was auto compiled from _js/pages/op_auth_signup.js -->
                 <!-- For more examples you can check out https://github.com/jzaefferer/jquery-validation -->
-                <form class="js-validation-signup px-30" action="be_pages_auth_all.html" method="post">
+                <form class="js-validation-signup px-30" th:action="@{/signup}" modelAttribute="signup" th:object="(${signup})" method="post">
                   <div class="form-group row">
                     <div class="col-12">
                       <div class="form-material floating">
@@ -168,9 +168,9 @@
                     </div>
                   </div>
                   <div class="form-group">
-                    <a type="button" class="btn btn-sm btn-hero btn-alt-success" th:href="@{/signIn}">
-                      <i class="fa fa-plus mr-10"></i> Daftar Akaun
-                    </a>
+                    <button type="submit" class="btn btn-sm btn-hero btn-alt-success" >
+                      <i class="si si-login mr-10"></i> Daftar Akaun
+                    </button>
                     <div class="mt-30">
                       <!-- <a class="link-effect text-muted mr-10 mb-5 d-inline-block" th:href="#" data-toggle="modal" data-target="#modal-terms">
                         <i class="fa fa-book text-muted mr-5"></i> Read Terms
