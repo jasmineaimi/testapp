@@ -128,6 +128,7 @@ public class GettingStartedApplication {
         }
     }
 
+    //run application
     public static void main(String[] args) {
         SpringApplication.run(GettingStartedApplication.class, args);
     }
