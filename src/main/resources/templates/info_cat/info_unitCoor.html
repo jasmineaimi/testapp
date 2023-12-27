@@ -104,10 +104,10 @@
 
             <!-- User Info -->
             <div class="content-header-item">
-              <a class="img-link mr-5" th:href="@{be_pages_generic_profile.html}">
+              <a class="img-link mr-5" href="be_pages_generic_profile.html">
                 <img class="img-avatar img-avatar32" th:src="@{stylesheets/assets/media/avatars/avatar15.jpg}" alt="">
               </a>
-              <a class="align-middle link-effect text-primary-dark font-w600" th:href="@{be_pages_generic_profile.html}">John Smith</a>
+              <a class="align-middle link-effect text-primary-dark font-w600" href="be_pages_generic_profile.html">John Smith</a>
             </div>
             <!-- END User Info -->
           </div>
@@ -119,7 +119,7 @@
           <!-- Search -->
           <div class="block pull-t pull-r-l">
             <div class="block-content block-content-full block-content-sm bg-body-light">
-              <form th:action="@{be_pages_generic_search.html}" method="post">
+              <form action="be_pages_generic_search.html" method="post">
                 <div class="input-group">
                   <input type="text" class="form-control" id="side-overlay-search" name="side-overlay-search" placeholder="Search..">
                   <div class="input-group-append">
@@ -169,28 +169,28 @@
               <ul class="nav-users push">
                 <li>
                   <a th:href="@{be_pages_generic_profile.html}">
-                    <img class="img-avatar" th:src="@{assets/media/avatars/avatar8.jpg}" alt="">
+                    <img class="img-avatar" th:src="@{stylesheets/assets/media/avatars/avatar8.jpg}" alt="">
                     <i class="fa fa-circle text-success"></i> Sara Fields
                     <div class="font-w400 font-size-xs text-muted">Photographer</div>
                   </a>
                 </li>
                 <li>
                   <a th:href="@{be_pages_generic_profile.html}">
-                    <img class="img-avatar" th:src="@{assets/media/avatars/avatar12.jpg}" alt="">
+                    <img class="img-avatar" th:src="@{stylesheets/assets/media/avatars/avatar12.jpg}" alt="">
                     <i class="fa fa-circle text-success"></i> Brian Stevens
                     <div class="font-w400 font-size-xs text-muted">Web Designer</div>
                   </a>
                 </li>
                 <li>
                   <a th:href="@{be_pages_generic_profile.html}">
-                    <img class="img-avatar" th:src="@{assets/media/avatars/avatar4.jpg}" alt="">
+                    <img class="img-avatar" th:src="@{stylesheets/assets/media/avatars/avatar4.jpg}" alt="">
                     <i class="fa fa-circle text-warning"></i> Amber Harvey
                     <div class="font-w400 font-size-xs text-muted">UI Designer</div>
                   </a>
                 </li>
                 <li>
                   <a th:href="@{be_pages_generic_profile.html}">
-                    <img class="img-avatar" th:src="@{assets/media/avatars/avatar14.jpg}" alt="">
+                    <img class="img-avatar" th:src="@{stylesheets/assets/media/avatars/avatar14.jpg}" alt="">
                     <i class="fa fa-circle text-danger"></i> Justin Hunt
                     <div class="font-w400 font-size-xs text-muted">Copywriter</div>
                   </a>
@@ -281,7 +281,7 @@
               </div>
             </div>
             <div class="block-content">
-              <form th:action="@{be_pages_dashboard.html}" method="post" onsubmit="return false;">
+              <form action="be_pages_generic_search.html" method="post" onsubmit="return false;">
                 <div class="form-group mb-15">
                   <label for="side-overlay-profile-name">Name</label>
                   <div class="input-group">
@@ -602,12 +602,12 @@
                 <div class="dropdown-divider"></div>
                 <div class="row gutters-tiny text-center">
                   <div class="col-6">
-                    <a class="dropdown-item mb-0" th:href="@{be_layout_api.html}">
+                    <a class="dropdown-item mb-0" href="be_layout_api.html">
                       <i class="si si-chemistry mr-5"></i> Layout API
                     </a>
                   </div>
                   <div class="col-6">
-                    <a class="dropdown-item mb-0" th:href="@{be_ui_color_themes.html}">
+                    <a class="dropdown-item mb-0" href="be_ui_color_themes.html">
                       <i class="fa fa-paint-brush mr-5"></i> Color Themes
                     </a>
                   </div>
@@ -629,7 +629,7 @@
               </button>
               <div class="dropdown-menu dropdown-menu-right min-width-200" aria-labelledby="page-header-user-dropdown">
                 <h5 class="h6 text-center py-10 mb-5 border-b text-uppercase">User</h5>
-                <a class="dropdown-item" th:href="@{be_pages_generic_profile.html}">
+                <a class="dropdown-item" href="be_pages_generic_profile.html">
                   <i class="si si-user mr-5"></i> Profile
                 </a>
                 <div class="dropdown-divider"></div>
@@ -654,7 +654,7 @@
         <!-- Header Search -->
         <div id="page-header-search" class="overlay-header">
           <div class="content-header content-header-fullrow">
-            <form th:action="@{be_pages_generic_search.html}" method="post">
+            <form action="be_pages_generic_search.html" method="post">
               <div class="input-group">
                 <div class="input-group-prepend">
                   <!-- Close Search Section -->
@@ -773,7 +773,7 @@
             Dibangunkan <i class="fa fa-heart text-pulse"></i> oleh <a class="font-w600" href="@{https://1.envato.market/ydb}" target="_blank">That's It</a>
           </div>
           <div class="float-left">
-            <a class="font-w600" th:href="" target="_blank">E-Curricular System</a> &copy; <span class="js-year-copy"></span>
+            <a class="font-w600" href="" target="_blank">E-Curricular System</a> &copy; <span class="js-year-copy"></span>
           </div>
         </div>
       </footer>
