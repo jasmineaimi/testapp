@@ -97,7 +97,6 @@ public class GettingStartedApplication {
         return "info_cat/info_sukan";
     }
 
-    
            @GetMapping("/info_unit")
     public String info_unit(){
         return "info_cat/info_unit";
@@ -106,6 +105,11 @@ public class GettingStartedApplication {
             @GetMapping("/dashboardCoor")
     public String dashboardCoor(){
         return "dashboard/dashboardCoor";
+    }
+
+               @GetMapping("/info_unitCoor")
+    public String info_unitCoor(){
+        return "info_cat/info_unitCoor";
     }
   
   
