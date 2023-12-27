@@ -107,9 +107,19 @@ public class GettingStartedApplication {
         return "dashboard/dashboardCoor";
     }
 
-               @GetMapping("/info_unitCoor")
+            @GetMapping("/info_unitCoor")
     public String info_unitCoor(){
         return "info_cat/info_unitCoor";
+    }
+
+            @GetMapping("/info_sukanCoor")
+    public String info_sukanCoor(){
+        return "info_cat/info_sukanCoor";
+    }
+
+            @GetMapping("/info_kelabCoor")
+    public String info_kelabCoor(){
+        return "info_cat/info_kelabCoor";
     }
   
   

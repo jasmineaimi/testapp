@@ -20,20 +20,20 @@
 
     <!-- Icons -->
     <!-- The following icons can be replaced with your own, they are used by desktop and mobile browsers -->
-    <link rel="shortcut icon" th:href="../assets/media/favicons/favicon.png">
-    <link rel="icon" type="image/png" sizes="192x192" th:href="../assets/media/favicons/favicon-192x192.png">
-    <link rel="apple-touch-icon" sizes="180x180" th:href="../assets/media/favicons/apple-touch-icon-180x180.png">
+    <link rel="shortcut icon" th:href="@{stylesheets/assets/media/favicons/favicon.png}">
+    <link rel="icon" type="image/png" sizes="192x192" th:href="@{stylesheets/assets/media/favicons/favicon-192x192.png}">
+    <link rel="apple-touch-icon" sizes="180x180" th:href="@{stylesheets/assets/media/favicons/apple-touch-icon-180x180.png}">
     <!-- END Icons -->
 
     <!-- Stylesheets -->
 
     <!-- Fonts and Codebase framework -->
-    <link rel="stylesheet" th:href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,400i,600,700&display=swap">
-    <link rel="stylesheet" id="css-main" th:href="../assets/css/codebase.min.css">
+    <link rel="stylesheet" href="@{https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,400i,600,700&display=swap}">
+    <link rel="stylesheet" id="css-main" th:href="@{stylesheets/assets/css/codebase.min.css}">
 
     <!-- You can include a specific file from css/themes/ folder to alter the default color theme of the template. eg: -->
     <!-- <link rel="stylesheet" id="css-theme" th:href="../assets/css/themes/corporate.min.css"> -->
-    <link rel="stylesheet" id="css-theme" th:href="../assets/css/themes/flat.min.css"> 
+    <link rel="stylesheet" id="css-theme" th:href="@{stylesheets/assets/css/themes/flat.min.css}"> 
     <!-- <link rel="stylesheet" id="css-theme" th:href="../assets/css/themes/earth.min.css"> 
     <!-- <link rel="stylesheet" id="css-theme" th:href="../assets/css/themes/elegance.min.css">
     <link rel="stylesheet" id="css-theme" th:href="../assets/css/themes/pulse.min.css"> -->
@@ -104,10 +104,10 @@
 
             <!-- User Info -->
             <div class="content-header-item">
-              <a class="img-link mr-5" th:href="be_pages_generic_profile.html">
-                <img class="img-avatar img-avatar32" th:src="../assets/media/avatars/avatar15.jpg" alt="">
+              <a class="img-link mr-5" th:href="@{be_pages_generic_profile.html}">
+                <img class="img-avatar img-avatar32" th:src="@{../assets/media/avatars/avatar15.jpg}" alt="">
               </a>
-              <a class="align-middle link-effect text-primary-dark font-w600" th:href="be_pages_generic_profile.html">John Smith</a>
+              <a class="align-middle link-effect text-primary-dark font-w600" th:href="@{be_pages_generic_profile.html}">John Smith</a>
             </div>
             <!-- END User Info -->
           </div>
@@ -119,7 +119,7 @@
           <!-- Search -->
           <div class="block pull-t pull-r-l">
             <div class="block-content block-content-full block-content-sm bg-body-light">
-              <form action="be_pages_generic_search.html" method="post">
+              <form th:action="@{be_pages_generic_search.html}" method="post">
                 <div class="input-group">
                   <input type="text" class="form-control" id="side-overlay-search" name="side-overlay-search" placeholder="Search..">
                   <div class="input-group-append">
@@ -168,29 +168,29 @@
             <div class="block-content">
               <ul class="nav-users push">
                 <li>
-                  <a th:href="be_pages_generic_profile.html">
-                    <img class="img-avatar" th:src="assets/media/avatars/avatar8.jpg" alt="">
+                  <a th:href="@{be_pages_generic_profile.html}">
+                    <img class="img-avatar" th:src="@{assets/media/avatars/avatar8.jpg}" alt="">
                     <i class="fa fa-circle text-success"></i> Sara Fields
                     <div class="font-w400 font-size-xs text-muted">Photographer</div>
                   </a>
                 </li>
                 <li>
-                  <a th:href="be_pages_generic_profile.html">
-                    <img class="img-avatar" th:src="assets/media/avatars/avatar12.jpg" alt="">
+                  <a th:href="@{be_pages_generic_profile.html}">
+                    <img class="img-avatar" th:src="@{assets/media/avatars/avatar12.jpg}" alt="">
                     <i class="fa fa-circle text-success"></i> Brian Stevens
                     <div class="font-w400 font-size-xs text-muted">Web Designer</div>
                   </a>
                 </li>
                 <li>
-                  <a th:href="be_pages_generic_profile.html">
-                    <img class="img-avatar" th:src="assets/media/avatars/avatar4.jpg" alt="">
+                  <a th:href="@{be_pages_generic_profile.html}">
+                    <img class="img-avatar" th:src="@{assets/media/avatars/avatar4.jpg}" alt="">
                     <i class="fa fa-circle text-warning"></i> Amber Harvey
                     <div class="font-w400 font-size-xs text-muted">UI Designer</div>
                   </a>
                 </li>
                 <li>
-                  <a th:href="be_pages_generic_profile.html">
-                    <img class="img-avatar" th:src="assets/media/avatars/avatar14.jpg" alt="">
+                  <a th:href="@{be_pages_generic_profile.html}">
+                    <img class="img-avatar" th:src="@{assets/media/avatars/avatar14.jpg}" alt="">
                     <i class="fa fa-circle text-danger"></i> Justin Hunt
                     <div class="font-w400 font-size-xs text-muted">Copywriter</div>
                   </a>
@@ -219,7 +219,7 @@
                   <i class="si si-wallet text-success"></i>
                   <div class="font-w600">+$29 New sale</div>
                   <div>
-                    <a th:href="javascript:void(0)">Admin Template</a>
+                    <a th:href="@{javascript:void(0)}">Admin Template</a>
                   </div>
                   <div class="font-size-xs text-muted">5 min ago</div>
                 </li>
@@ -227,7 +227,7 @@
                   <i class="si si-close text-danger"></i>
                   <div class="font-w600">Project removed</div>
                   <div>
-                    <a th:href="javascript:void(0)">Best Icon Set</a>
+                    <a th:href="@{javascript:void(0)}">Best Icon Set</a>
                   </div>
                   <div class="font-size-xs text-muted">26 min ago</div>
                 </li>
@@ -235,7 +235,7 @@
                   <i class="si si-pencil text-info"></i>
                   <div class="font-w600">You edited the file</div>
                   <div>
-                    <a th:href="javascript:void(0)">
+                    <a th:href="@{javascript:void(0)}">
                       <i class="fa fa-file-text-o"></i> Docs.doc
                     </a>
                   </div>
@@ -245,7 +245,7 @@
                   <i class="si si-plus text-success"></i>
                   <div class="font-w600">New user</div>
                   <div>
-                    <a th:href="javascript:void(0)">StudioWeb - View Profile</a>
+                    <a th:href="@{javascript:void(0)}">StudioWeb - View Profile</a>
                   </div>
                   <div class="font-size-xs text-muted">5 hours ago</div>
                 </li>
@@ -253,7 +253,7 @@
                   <i class="si si-wrench text-warning"></i>
                   <div class="font-w600">App v5.5 is available</div>
                   <div>
-                    <a th:href="javascript:void(0)">Update now</a>
+                    <a th:href="@{javascript:void(0)}">Update now</a>
                   </div>
                   <div class="font-size-xs text-muted">8 hours ago</div>
                 </li>
@@ -261,7 +261,7 @@
                   <i class="si si-user-follow text-pulse"></i>
                   <div class="font-w600">+1 Friend Request</div>
                   <div>
-                    <a th:href="javascript:void(0)">Accept</a>
+                    <a th:href="@{javascript:void(0)}">Accept</a>
                   </div>
                   <div class="font-size-xs text-muted">1 day ago</div>
                 </li>
@@ -281,7 +281,7 @@
               </div>
             </div>
             <div class="block-content">
-              <form action="be_pages_dashboard.html" method="post" onsubmit="return false;">
+              <form th:action="@{be_pages_dashboard.html}" method="post" onsubmit="return false;">
                 <div class="form-group mb-15">
                   <label for="side-overlay-profile-name">Name</label>
                   <div class="input-group">
@@ -425,7 +425,9 @@
 
               <!-- Logo -->
               <div class="content-header-item">
-                <img th:src="../pictures/logo lain.png" style="width: 200px; height:45px;">                
+                <div class="content-header-item">
+                  <img th:src="@{../pictures/logo lain.png}" style="width: 200px; height:45px;">                
+                </div>
               </div>
               <!-- END Logo -->
             </div>
@@ -433,86 +435,86 @@
           </div>
           <!-- END Side Header -->
 
-         <!-- Sidebar Scrolling -->
-         <div class="js-sidebar-scroll">
-          <!-- Side User -->
-          <div class="content-side content-side-full content-side-user px-10 align-parent">
-            <!-- Visible only in mini mode -->
-            <div class="sidebar-mini-visible-b align-v animated fadeIn">
-              <img class="img-avatar img-avatar32" th:src="../assets/media/avatars/avatar15.jpg" alt="">
-            </div>
-            <!-- END Visible only in mini mode -->
+         
+          <!-- Sidebar Scrolling -->
+          <div class="js-sidebar-scroll">
+            <!-- Side User -->
+            <div class="content-side content-side-full content-side-user px-10 align-parent">
+              <!-- Visible only in mini mode -->
+              <div class="sidebar-mini-visible-b align-v animated fadeIn">
+                <img class="img-avatar img-avatar32" th:src="@{../assets/media/avatars/avatar15.jpg}" alt="">
+              </div>
+              <!-- END Visible only in mini mode -->
 
-            <!-- Visible only in normal mode -->
-            <div class="sidebar-mini-hidden-b text-center">
-              <a class="img-link" th:href="../profil/profileCoordinator.html">
-                <img class="img-avatar" th:src="../assets/media/avatars/avatar15.jpg" alt="">
-              </a>
-              <ul class="list-inline mt-10">
-                <li class="list-inline-item">
-                  <a class="link-effect text-dual-primary-dark font-size-sm font-w600 text-uppercase" th:href="../profil/profileCoordinator.html">Alif Ikmal</a>
-                </li>
-                <li class="list-inline-item">
-                  <!-- Layout API, functionality initialized in Template._uiApiLayout() -->
-                  <a class="link-effect text-dual-primary-dark" data-toggle="layout" data-action="sidebar_style_inverse_toggle" th:href="javascript:void(0)">
-                    <i class="si si-drop"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a class="link-effect text-dual-primary-dark" th:href="../sign-in/signInCoordinator.html">
-                    <i class="si si-logout"></i>
-                  </a>
-                </li>
-              </ul>
+              <!-- Visible only in normal mode -->
+              <div class="sidebar-mini-hidden-b text-center">
+                <a class="img-link" th:href="@{../profil/profileCoordinator.html}">
+                  <img class="img-avatar" th:src="@{../assets/media/avatars/avatar15.jpg}" alt="">
+                </a>
+                <ul class="list-inline mt-10">
+                  <li class="list-inline-item">
+                    <a class="link-effect text-dual-primary-dark font-size-sm font-w600 text-uppercase" th:href="@{../profil/profileCoordinator.html}">Aliff Ikmal</a>
+                  </li>
+                  <li class="list-inline-item">
+                    <!-- Layout API, functionality initialized in Template._uiApiLayout() -->
+                    <a class="link-effect text-dual-primary-dark" data-toggle="layout" data-action="sidebar_style_inverse_toggle" th:href="@{javascript:void(0)}">
+                      <i class="si si-drop"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a class="link-effect text-dual-primary-dark" th:href="@{../sign-in/signInCoordinator.html}">
+                      <i class="si si-logout"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <!-- END Visible only in normal mode -->
             </div>
-            <!-- END Visible only in normal mode -->
+            <!-- END Side User -->
+
+            <!-- Side Navigation -->
+            <div class="content-side content-side-full">
+                <ul class="nav-main">
+                  <li>
+                    <a class="active" th:href="@{../dashboard/dashboardCoor.html}"><i class="si si-cup"></i><span class="sidebar-mini-hide">DASHBOARD</span></a>
+                  </li>
+                  <li>
+                    <a class="active" th:href="@{../profil/profileCoordinatorEdit.html}"><i class="si si-user"></i><span class="sidebar-mini-hide">PROFIL</span></a>
+                  </li>
+                  <li>
+                    <a class="nav-submenu" data-toggle="nav-submenu" th:href="@{#}"><i class="si si-layers"></i><span class="sidebar-mini-hide">KATEGORI</span></a>
+                    <ul>
+                      <li>
+                        <a th:href="@{../info_cat/info_unitCoor.html}">Unit Beruniform</a>
+                      </li>
+                      <li>
+                        <a th:href="@{../info_cat/info_sukanCoor.html}">Sukan dan Permainan</a>
+                      </li>
+                      <li>
+                        <a th:href="@{../info_cat/info_kelabCoor.html}">Kelab dan Persatuan</a>
+                      </li>
+                      
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="nav-submenu" data-toggle="nav-submenu" th:href="@{#}"><i class="si si-vector"></i><span class="sidebar-mini-hide">GURU PENYELARAS</span></a>
+                    <ul>
+                      <li>
+                        <a th:href="@{../teacher/assignTeacher.html}">Melantik Guru</a>
+                      </li>
+                      <li>
+                        <a th:href="@{../teacher/listOfTeacherAssigned.html}" >Senarai Guru</a>
+                      </li>
+                    </ul>
+                  </li>
+                 
+                </ul>
           </div>
-          <!-- END Side User -->
-
-          <div class="content-side content-side-full">
-            <ul class="nav-main">
-              <li>
-                <a class="active" th:href="../dashboard/dashboardCoor.html"><i class="si si-cup"></i><span class="sidebar-mini-hide">DASHBOARD</span></a>
-              </li>
-              <li>
-                <a class="active" th:href="../profil/profileCoordinatorEdit.html"><i class="si si-user"></i><span class="sidebar-mini-hide">PROFIL</span></a>
-              </li>
-              <li>
-                <a class="nav-submenu" data-toggle="nav-submenu" th:href="#"><i class="si si-layers"></i><span class="sidebar-mini-hide">KATEGORI</span></a>
-                <ul>
-                  <li>
-                    <a th:href="../info_cat/info_unitCoor.html">Unit Beruniform</a>
-                  </li>
-                  <li>
-                    <a th:href="../info_cat/info_sukanCoor.html">Sukan dan Permainan</a>
-                  </li>
-                  <li>
-                    <a th:href="../info_cat/info_kelabCoor.html">Kelab dan Persatuan</a>
-                  </li>
-                  
-                </ul>
-              </li>
-              <li>
-                <a class="nav-submenu" data-toggle="nav-submenu" th:href="#"><i class="si si-vector"></i><span class="sidebar-mini-hide">GURU PENYELARAS</span></a>
-                <ul>
-                  <li>
-                    <a th:href="../teacher/assignTeacher.html">Melantik Guru</a>
-                  </li>
-                  <li>
-                    <a th:href="../teacher/listOfTeacherAssigned.html" >Senarai Guru</a>
-                  </li>
-
-                </ul>
-              </li>
-             
-            </ul>
-      </div>
-      <!-- END Sidebar Scrolling -->
-</div>
-<!-- Sidebar Content -->
-</nav>
-<!-- END Sidebar -->
-
+          <!-- END Sidebar Scrolling -->
+        </div>
+        <!-- Sidebar Content -->
+      </nav>
+      <!-- END Sidebar -->
 
       <!-- Header -->
       <header id="page-header">
@@ -545,32 +547,32 @@
                 <h6 class="dropdown-header">Color Themes</h6>
                 <div class="row no-gutters text-center mb-5">
                   <div class="col-2 mb-5">
-                    <a class="text-default" data-toggle="theme" data-theme="default" th:href="javascript:void(0)">
+                    <a class="text-default" data-toggle="theme" data-theme="default" th:href="@{javascript:void(0)}">
                       <i class="fa fa-2x fa-circle"></i>
                     </a>
                   </div>
                   <div class="col-2 mb-5">
-                    <a class="text-elegance" data-toggle="theme" data-theme="../assets/css/themes/elegance.min.css" th:href="javascript:void(0)">
+                    <a class="text-elegance" data-toggle="theme" data-theme="../assets/css/themes/elegance.min.css" th:href="@{javascript:void(0)}">
                       <i class="fa fa-2x fa-circle"></i>
                     </a>
                   </div>
                   <div class="col-2 mb-5">
-                    <a class="text-pulse" data-toggle="theme" data-theme="../assets/css/themes/pulse.min.css" th:href="javascript:void(0)">
+                    <a class="text-pulse" data-toggle="theme" data-theme="../assets/css/themes/pulse.min.css" th:href="@{javascript:void(0)}">
                       <i class="fa fa-2x fa-circle"></i>
                     </a>
                   </div>
                   <div class="col-2 mb-5">
-                    <a class="text-flat" data-toggle="theme" data-theme="../assets/css/themes/flat.min.css" th:href="javascript:void(0)">
+                    <a class="text-flat" data-toggle="theme" data-theme="../assets/css/themes/flat.min.css" th:href="@{javascript:void(0)}">
                       <i class="fa fa-2x fa-circle"></i>
                     </a>
                   </div>
                   <div class="col-2 mb-5">
-                    <a class="text-corporate" data-toggle="theme" data-theme="../assets/css/themes/corporate.min.css" th:href="javascript:void(0)">
+                    <a class="text-corporate" data-toggle="theme" data-theme="../assets/css/themes/corporate.min.css" th:href="@{javascript:void(0)}">
                       <i class="fa fa-2x fa-circle"></i>
                     </a>
                   </div>
                   <div class="col-2 mb-5">
-                    <a class="text-earth" data-toggle="theme" data-theme="../assets/css/themes/earth.min.css" th:href="javascript:void(0)">
+                    <a class="text-earth" data-toggle="theme" data-theme="../assets/css/themes/earth.min.css" th:href="@{javascript:void(0)}">
                       <i class="fa fa-2x fa-circle"></i>
                     </a>
                   </div>
@@ -600,12 +602,12 @@
                 <div class="dropdown-divider"></div>
                 <div class="row gutters-tiny text-center">
                   <div class="col-6">
-                    <a class="dropdown-item mb-0" th:href="be_layout_api.html">
+                    <a class="dropdown-item mb-0" th:href="@{be_layout_api.html}">
                       <i class="si si-chemistry mr-5"></i> Layout API
                     </a>
                   </div>
                   <div class="col-6">
-                    <a class="dropdown-item mb-0" th:href="be_ui_color_themes.html">
+                    <a class="dropdown-item mb-0" th:href="@{be_ui_color_themes.html}">
                       <i class="fa fa-paint-brush mr-5"></i> Color Themes
                     </a>
                   </div>
@@ -617,39 +619,42 @@
           <!-- END Left Section -->
 
           <!-- Right Section -->
-         <div class="content-header-section">
-          <!-- User Dropdown -->
-          <div class="btn-group" role="group">
-            <button type="button" class="btn btn-rounded btn-dual-secondary" id="page-header-user-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <i class="fa fa-user d-sm-none"></i>
-              <span class="d-none d-sm-inline-block">Alif Ikmal</span>
-              <i class="fa fa-angle-down ml-5"></i>
-            </button>
-            <div class="dropdown-menu dropdown-menu-right min-width-200" aria-labelledby="page-header-user-dropdown">
-              <h5 class="h6 text-center py-10 mb-5 border-b text-uppercase">User</h5>
-              <a class="dropdown-item" th:href="../profil/profileCoordinator.html">
-                <i class="si si-user mr-5"></i> Profile
-              </a>
-              <div class="dropdown-divider"></div>
+          <div class="content-header-section">
+            <!-- User Dropdown -->
+            <div class="btn-group" role="group">
+              <button type="button" class="btn btn-rounded btn-dual-secondary" id="page-header-user-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fa fa-user d-sm-none"></i>
+                <span class="d-none d-sm-inline-block">J. Smith</span>
+                <i class="fa fa-angle-down ml-5"></i>
+              </button>
+              <div class="dropdown-menu dropdown-menu-right min-width-200" aria-labelledby="page-header-user-dropdown">
+                <h5 class="h6 text-center py-10 mb-5 border-b text-uppercase">User</h5>
+                <a class="dropdown-item" th:href="@{be_pages_generic_profile.html}">
+                  <i class="si si-user mr-5"></i> Profile
+                </a>
+                <div class="dropdown-divider"></div>
 
-              <!-- END Side Overlay -->
+                <!-- END Side Overlay -->
 
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" th:href="../sign-in/signInCoordinatorSukan.html">
-                <i class="si si-logout mr-5"></i> Sign Out
-              </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" th:href="@{../sign-in/signInCoordinator.html}">
+                  <i class="si si-logout mr-5"></i> Sign Out
+                </a>
+              </div>
             </div>
+            <!-- END User Dropdown -->
+
+           
+            <!-- END Toggle Side Overlay -->
           </div>
-          <!-- END User Dropdown -->
+          <!-- END Right Section -->
         </div>
-        <!-- END Right Section -->
-      </div>
-      <!-- END Header Content -->
+        <!-- END Header Content -->
 
         <!-- Header Search -->
         <div id="page-header-search" class="overlay-header">
           <div class="content-header content-header-fullrow">
-            <form action="be_pages_generic_search.html" method="post">
+            <form th:action="@{be_pages_generic_search.html}" method="post">
               <div class="input-group">
                 <div class="input-group-prepend">
                   <!-- Close Search Section -->
@@ -765,7 +770,7 @@
       <footer id="page-footer">
         <div class="content py-20 font-size-sm clearfix">
           <div class="float-right">
-            Dibangunkan <i class="fa fa-heart text-pulse"></i> oleh <a class="font-w600" th:href="https://1.envato.market/ydb" target="_blank">That's It</a>
+            Dibangunkan <i class="fa fa-heart text-pulse"></i> oleh <a class="font-w600" th:href="@{https://1.envato.market/ydb}" target="_blank">That's It</a>
           </div>
           <div class="float-left">
             <a class="font-w600" th:href="" target="_blank">E-Curricular System</a> &copy; <span class="js-year-copy"></span>
@@ -793,7 +798,7 @@
         assets/js/core/jquery.countTo.min.js
         assets/js/core/js.cookie.min.js
     -->
-    <script th:src="../assets/js/codebase.core.min.js"></script>
+    <script th:src="@{../assets/js/codebase.core.min.js}"></script>
 
     <!--
         Codebase JS
@@ -801,6 +806,6 @@
         Custom functionality including Blocks/Layout API as well as other vital and optional helpers
         webpack is putting everything together at assets/_js/main/app.js
     -->
-    <script th:src="../assets/js/codebase.app.min.js"></script>
+    <script th:src="@{../assets/js/codebase.app.min.js}"></script>
   </body>
 </html>
