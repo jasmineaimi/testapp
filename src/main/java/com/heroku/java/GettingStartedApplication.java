@@ -102,6 +102,11 @@ public class GettingStartedApplication {
     public String info_unit(){
         return "info_cat/info_unit";
     }
+
+               @GetMapping("/dashboardCoor")
+    public String dashboardCoor(){
+        return "dashboard/dashboardCoor";
+    }
   
   
 
