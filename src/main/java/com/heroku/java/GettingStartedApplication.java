@@ -107,6 +107,11 @@ public class GettingStartedApplication {
         return "dashboard/dashboardCoor";
     }
 
+         @GetMapping("/profileCoordinator")
+    public String profileCoordinator(){
+        return "profil/profileCoordinator";
+    }
+
          @GetMapping("/profileCoordinatorEdit")
     public String profileCoordinatorEdit(){
         return "profil/profileCoordinatorEdit";
