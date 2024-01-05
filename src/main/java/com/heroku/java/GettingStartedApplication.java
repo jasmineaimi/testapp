@@ -131,6 +131,11 @@ public class GettingStartedApplication {
     public String info_kelabCoor(){
         return "info_cat/info_kelabCoor";
     }
+
+        @GetMapping("/assignTeacher")
+    public String assignTeacher(){
+        return "teacher/assignTeacher";
+    }
   
   
 
