@@ -147,7 +147,9 @@ public class GettingStartedApplication {
         return "teacher/addTeacher";
     }
   
-  
+    @GetMapping("/MydashboardAdmin")
+    public String MydashboardAdmin(){
+        return "dashboard/MydashboardAdmin";
 
 
     @GetMapping("/database")
