@@ -141,6 +141,11 @@ public class GettingStartedApplication {
     public String listOfTeacherAssigned(){
         return "teacher/listOfTeacherAssigned";
     }
+
+    @GetMapping("/addTeacher")
+    public String addTeacher(){
+        return "teacher/addTeacher";
+    }
   
   
 
