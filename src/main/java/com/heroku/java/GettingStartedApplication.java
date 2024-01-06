@@ -150,6 +150,7 @@ public class GettingStartedApplication {
     @GetMapping("/MydashboardAdmin")
     public String MydashboardAdmin(){
         return "dashboard/MydashboardAdmin";
+    }
 
 
     @GetMapping("/database")
