@@ -162,6 +162,11 @@ public class GettingStartedApplication {
         return "adminViewTeacher/AdminViewTeacher";
     }
 
+    @GetMapping("/unit")
+    public String unit(){
+        return "info_cat/unit";
+    }
+
 
     @GetMapping("/database")
     String database(Map<String, Object> model) {
