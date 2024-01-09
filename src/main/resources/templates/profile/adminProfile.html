@@ -29,7 +29,7 @@
 
     <!-- Fonts and Codebase framework -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,400i,600,700&display=swap">
-    <link rel="stylesheet" id="css-main" th:href="../assets/css/codebase.min.css">
+    <link rel="stylesheet" id="css-main" th:href="stylesheets/assets/css/codebase.min.css">
 
     <!-- You can include a specific file from css/themes/ folder to alter the default color theme of the template. eg: -->
     <!-- <link rel="stylesheet" id="css-theme" th:href="../assets/css/themes/corporate.min.css"> -->
@@ -425,7 +425,7 @@
 
               <!-- Logo -->
               <div class="content-header-item">
-                <img th:src="../pictures/logo lain.png" style="width: 200px; height:45px;">                
+                <img th:src="@{stylesheets/assets/pictures/logo lain.png}" style="width: 200px; height:45px;">                
               </div>
               <!-- END Logo -->
             </div>
@@ -439,7 +439,7 @@
             <div class="content-side content-side-full content-side-user px-10 align-parent">
               <!-- Visible only in mini mode -->
               <div class="sidebar-mini-visible-b align-v animated fadeIn">
-                <img class="img-avatar img-avatar32" th:src="../assets/media/avatars/avatar15.jpg" alt="">
+                <img class="img-avatar img-avatar32" th:src="@{stylesheets/assets/media/avatars/avatar15.jpg}" alt="">
               </div>
               <!-- END Visible only in mini mode -->
 
@@ -702,7 +702,7 @@
               <!-- Avatar -->
               <div class="mb-15">
                 <a class="img-link" th:href=" ">
-                  <img class="img-avatar img-avatar96 img-avatar-thumb" th:src="../assets/media/avatars/avatar15.jpg" alt="">
+                  <img class="img-avatar img-avatar96 img-avatar-thumb" th:src="@{stylesheets/assets/media/avatars/avatar15.jpg}" alt="">
                 </a>
               </div>
               <!-- END Avatar -->
@@ -745,7 +745,7 @@
                     <div class="form-group row">
                       <div class="col-md-10 col-xl-6">
                         <div class="push">
-                          <img class="img-avatar" th:src="../assets/media/avatars/avatar15.jpg" alt="">
+                          <img class="img-avatar" th:src="@{stylesheets/assets/media/avatars/avatar15.jpg}" alt="">
                         </div>
                         <div class="custom-file">
                           <!-- Populating custom file input label with the selected filename (data-toggle="custom-file-input" is initialized in Helpers.coreBootstrapCustomFileInput()) -->
@@ -957,7 +957,7 @@
         assets/js/core/jquery.countTo.min.js
         assets/js/core/js.cookie.min.js
     -->
-    <script th:src="../assets/js/codebase.core.min.js"></script>
+    <script th:src="@{stylesheets/assets/js/codebase.core.min.js}"></script>
 
     <!--
         Codebase JS
@@ -965,6 +965,6 @@
         Custom functionality including Blocks/Layout API as well as other vital and optional helpers
         webpack is putting everything together at assets/_js/main/app.js
     -->
-    <script th:src="../assets/js/codebase.app.min.js"></script>
+    <script th:src="@{stylesheets/assets/js/codebase.app.min.js}"></script>
   </body>
 </html>
