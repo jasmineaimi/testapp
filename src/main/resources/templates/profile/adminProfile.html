@@ -343,7 +343,7 @@
                     </a>
                   </li>
                   <li class="list-inline-item">
-                    <a class="link-effect text-dual-primary-dark" th:href="@{stylesheets/assets/sign-in/AdminSignIn.html}">
+                    <a class="link-effect text-dual-primary-dark" th:href="@{/AdminSignIn}">
                       <i class="si si-logout"></i>
                     </a>
                   </li>
@@ -357,38 +357,38 @@
 <div class="content-side content-side-full">
   <ul class="nav-main">
       <li>
-          <a class="active" th:href="@{stylesheets/dashboard/MydashboardAdmin.html}"><i class="si si-cup"></i><span class="sidebar-mini-hide">DASHBOARD</span></a>
+          <a class="active" th:href="@{/MydashboardAdmin}"><i class="si si-cup"></i><span class="sidebar-mini-hide">DASHBOARD</span></a>
         </li>
         <li>
-          <a class="active" th:href="@{stylesheets/profile/adminProfile.html}"><i class="si si-user"></i><span class="sidebar-mini-hide">PROFIL</span></a>
+          <a class="active" th:href="@{/adminProfile}"><i class="si si-user"></i><span class="sidebar-mini-hide">PROFIL</span></a>
         </li>
         <li>
-          <a class="active" th:href="@{stylesheets/guru/AdminViewTeacher.html}"><i class="si si-people"></i><span class="sidebar-mini-hide">GURU</span></a>
+          <a class="active" th:href="@{/AdminViewTeacher}"><i class="si si-people"></i><span class="sidebar-mini-hide">GURU</span></a>
         </li>
         <li>
         <li>
-          <a class="nav-submenu" data-toggle="nav-submenu" th:href="#"><i class="si si-layers"></i><span class="sidebar-mini-hide">AKAUN</span></a>
+          <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="si si-layers"></i><span class="sidebar-mini-hide">AKAUN</span></a>
           <ul>
             <li>
-              <a th:href="@{stylesheets/akaun/accountCoordinator.html}">KOORDINATOR</a>
+              <a th:href="@{/accountCoordinator}">KOORDINATOR</a>
             </li>
             <li>
-              <a th:href="@{stylesheets/akaun/accountStudent.html}">PELAJAR</a>
+              <a th:href="@{/accountStudent}">PELAJAR</a>
             </li>
           </ul>
         </li>
       </li>
     <li>
-      <a class="nav-submenu" data-toggle="nav-submenu" th:href="#"><i class="si si-layers"></i><span class="sidebar-mini-hide">KATEGORI</span></a>
+      <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="si si-layers"></i><span class="sidebar-mini-hide">KATEGORI</span></a>
       <ul>
         <li>
-          <a th:href="@{stylesheets/info_cat/unit.html}">Unit Beruniform</a>
+          <a th:href="@{/unit}">Unit Beruniform</a>
         </li>
         <li>
-          <a th:href="@{stylesheets/info_cat/kelab.html}">Kelab dan Persatuan</a>
+          <a th:href="@{/kelab}">Kelab dan Persatuan</a>
         </li>
         <li>
-          <a th:href="@{stylesheets/info_cat/sukan.html}">Sukan dan Permainan</a>
+          <a th:href="@{/sukan}">Sukan dan Permainan</a>
         </li>
       </ul>
     </li>
@@ -599,7 +599,7 @@
               <!-- END Personal -->
 
               <!-- Actions -->
-              <a th:href="@{stylesheets/dashboard/MydashboardAdmin.html}" class="btn btn-rounded btn-hero btn-sm btn-alt-secondary mb-5">
+              <a th:href="@{/MydashboardAdmin}" class="btn btn-rounded btn-hero btn-sm btn-alt-secondary mb-5">
                 <i class="fa fa-arrow-left mr-5"></i> Kembali
               </a>
               <!-- END Actions -->
