@@ -152,6 +152,11 @@ public class GettingStartedApplication {
         return "dashboard/MydashboardAdmin";
     }
 
+    @GetMapping("/adminProfile")
+    public String adminProfile(){
+        return "profile/adminProfile";
+    }
+
 
     @GetMapping("/database")
     String database(Map<String, Object> model) {
