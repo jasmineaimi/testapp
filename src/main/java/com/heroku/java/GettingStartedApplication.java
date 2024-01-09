@@ -157,6 +157,11 @@ public class GettingStartedApplication {
         return "profile/adminProfile";
     }
 
+    @GetMapping("/AdminViewTeacher")
+    public String AdminViewTeacher(){
+        return "adminViewTeacher/AdminViewTeacher";
+    }
+
 
     @GetMapping("/database")
     String database(Map<String, Object> model) {
