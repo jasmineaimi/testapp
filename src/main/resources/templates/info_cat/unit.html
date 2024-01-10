@@ -614,8 +614,11 @@
             <div class="block">
               <div class="row">
                 <div class="col-12 mb-30">
-                  <button type="submit" class="btn btn-alt-primary min-width-125 float-right" data-toggle="modal"
-                    data-target="#tambah_unit"><i class="fa fa-plus mr-10"></i>Tambah Unit Beruniform</button>
+                  <!--<button type="submit" class="btn btn-alt-primary min-width-125 float-right" data-toggle="modal"
+                    data-target="#tambah_unit"><i class="fa fa-plus mr-10"></i>Tambah Unit Beruniform</button>-->
+                    <a type="button" class="btn btn-alt-primary min-width-125 float-right" title="Tambah Unit Beruniform" data-toggle="modal" data-target="#tambah_unit">
+                      <i class="fa fa-plus mr-10"></i>Tambah Unit Beruniform
+                  </a>
                 </div>
               </div>
               <!-- Modal Tambah Unit-->
@@ -784,14 +787,20 @@
                       <form th:action="" method="POST">
                         <input type="hidden" class="form-control" id="id_doc_d" name="id_doc_d"
                           value="">
-                        <button type="button" class="btn btn-sm btn-primary" data-toggle="modal"
+                        <!--<button type="button" class="btn btn-sm btn-primary" data-toggle="modal"
                           data-target="#edit_unit" title="Kemaskini">
                           <i class="fa fa-edit"></i>
-                        </button>
-                        <button type="button" name="delete-doc" class="btn btn-sm btn-danger" data-toggle="modal"
+                        </button>-->
+                        <a type="button" class="btn btn-sm btn-primary" title="Kemaskini Unit Beruniform" data-toggle="modal" data-target="#edit_unit">
+                          <i class="fa fa-edit"></i>
+                        </a>
+                        <!--<button type="button" name="delete-doc" class="btn btn-sm btn-danger" data-toggle="modal"
                           data-target="#delete_unit" title="Padam Dokumen">
                           <i class="fa fa-trash"></i>
-                        </button>
+                        </button>-->
+                        <a type="button" name="delete-doc" class="btn btn-sm btn-danger" title="Padam Unit" data-toggle="modal" data-target="#delete_unit">
+                          <i class="fa fa-trash"></i>
+                        </a>
                       </form>
                     </td>
                   </tr>
@@ -805,14 +814,20 @@
                       <form th:action="" method="POST">
                         <input type="hidden" class="form-control" id="id_doc_d" name="id_doc_d"
                           value="">
-                        <button type="button" class="btn btn-sm btn-primary" data-toggle="modal"
+                        <!--<button type="button" class="btn btn-sm btn-primary" data-toggle="modal"
                           data-target="#edit_unit" title="Kemaskini">
                           <i class="fa fa-edit"></i>
-                        </button>
-                        <button type="button" name="delete-doc" class="btn btn-sm btn-danger" data-toggle="modal"
+                        </button>-->
+                        <a type="button" class="btn btn-sm btn-primary" title="Kemaskini Unit Beruniform" data-toggle="modal" data-target="#edit_unit">
+                          <i class="fa fa-edit"></i>
+                        </a>
+                        <!--<button type="button" name="delete-doc" class="btn btn-sm btn-danger" data-toggle="modal"
                           data-target="#delete_unit" title="Padam Dokumen">
                           <i class="fa fa-trash"></i>
-                        </button>
+                        </button>-->
+                        <a type="button" name="delete-doc" class="btn btn-sm btn-danger" title="Padam Unit" data-toggle="modal" data-target="#delete_unit">
+                          <i class="fa fa-trash"></i>
+                        </a>
                       </form>
                     </td>
                   </tr>
@@ -826,14 +841,20 @@
                       <form th:action="" method="POST">
                         <input type="hidden" class="form-control" id="id_doc_d" name="id_doc_d"
                           value="">
-                        <button type="button" class="btn btn-sm btn-primary" data-toggle="modal"
+                        <!--<button type="button" class="btn btn-sm btn-primary" data-toggle="modal"
                           data-target="#edit_unit" title="Kemaskini">
                           <i class="fa fa-edit"></i>
-                        </button>
-                        <button type="button" name="delete-doc" class="btn btn-sm btn-danger" data-toggle="modal"
+                        </button>-->
+                        <a type="button" class="btn btn-sm btn-primary" title="Kemaskini Unit Beruniform" data-toggle="modal" data-target="#edit_unit">
+                          <i class="fa fa-edit"></i>
+                        </a>
+                        <!--<button type="button" name="delete-doc" class="btn btn-sm btn-danger" data-toggle="modal"
                           data-target="#delete_unit" title="Padam Dokumen">
                           <i class="fa fa-trash"></i>
-                        </button>
+                        </button>-->
+                        <a type="button" name="delete-doc" class="btn btn-sm btn-danger" title="Padam Unit" data-toggle="modal" data-target="#delete_unit">
+                          <i class="fa fa-trash"></i>
+                        </a>
                       </form>
                     </td>
                   </tr>
