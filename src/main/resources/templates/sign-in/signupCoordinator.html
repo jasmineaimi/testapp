@@ -238,7 +238,7 @@ MAIN CONTENT LAYOUT
     assets/js/core/jquery.countTo.min.js
     assets/js/core/js.cookie.min.js
 -->
-<script th:src="stylesheets/assets/js/codebase.core.min.js"></script>
+<script th:src="@{stylesheets/assets/js/codebase.core.min.js}"></script>
 
 <!--
     Codebase JS
@@ -246,11 +246,11 @@ MAIN CONTENT LAYOUT
     Custom functionality including Blocks/Layout API as well as other vital and optional helpers
     webpack is putting everything together at assets/_js/main/app.js
 -->
-<script th:src="stylesheets/assets/js/codebase.app.min.js"></script>
+<script th:src="@{stylesheets/assets/js/codebase.app.min.js}"></script>
 
 <!-- Page JS Plugins -->
-<script th:src="stylesheets/assets/js/plugins/jquery-validation/jquery.validate.min.js"></script>
+<script th:src="@{stylesheets/assets/js/plugins/jquery-validation/jquery.validate.min.js}"></script>
 
 <!-- Page JS Code -->
-<script th:src="stylesheets/assets/js/pages/op_auth_signup.min.js"></script>  </body>
+<script th:src="@{stylesheets/assets/js/pages/op_auth_signup.min.js}"></script>  </body>
 </html>
