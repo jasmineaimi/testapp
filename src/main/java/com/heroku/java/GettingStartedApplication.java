@@ -167,6 +167,16 @@ public class GettingStartedApplication {
         return "info_cat/unit";
     }
 
+    @GetMapping("/kelab")
+    public String kelab(){
+        return "info_cat/kelab";
+    }
+
+    @GetMapping("/sukan")
+    public String sukan(){
+        return "info_cat/sukan";
+    }
+
 
     @GetMapping("/database")
     String database(Map<String, Object> model) {

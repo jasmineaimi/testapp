@@ -20,29 +20,29 @@
 
     <!-- Icons -->
     <!-- The following icons can be replaced with your own, they are used by desktop and mobile browsers -->
-    <link rel="shortcut icon" href="../assets/media/favicons/favicon.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="../assets/media/favicons/favicon-192x192.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="../assets/media/favicons/apple-touch-icon-180x180.png">
+    <link rel="shortcut icon" th:href="@{stylesheets/assets/media/favicons/favicon.png}">
+    <link rel="icon" type="image/png" sizes="192x192" th:href="@{stylesheets/assets/media/favicons/favicon-192x192.png}">
+    <link rel="apple-touch-icon" sizes="180x180" th:href="@{stylesheets/assets/media/favicons/apple-touch-icon-180x180.png}">
     <!-- END Icons -->
 
-    <!-- Stylesheets -->
+    <!-- stylesheetss -->
 
     <!-- Fonts and Codebase framework -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,400i,600,700&display=swap">
-    <link rel="stylesheet" id="css-main" href="../assets/css/codebase.min.css">
+    <link rel="stylesheets" href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,400i,600,700&display=swap">
+    <link rel="stylesheets" id="css-main" th:href="@{stylesheets/assets/css/codebase.min.css}">
 
     <!-- You can include a specific file from css/themes/ folder to alter the default color theme of the template. eg: -->
-    <!-- <link rel="stylesheet" id="css-theme" href="../assets/css/themes/corporate.min.css"> -->
-    <link rel="stylesheet" id="css-theme" href="../assets/css/themes/flat.min.css"> 
-    <!-- <link rel="stylesheet" id="css-theme" href="../assets/css/themes/earth.min.css"> 
-    <!-- <link rel="stylesheet" id="css-theme" href="../assets/css/themes/elegance.min.css">
-    <link rel="stylesheet" id="css-theme" href="../assets/css/themes/pulse.min.css"> -->
+    <!-- <link rel="stylesheets" id="css-theme" th:href="../assets/css/themes/corporate.min.css"> -->
+    <link rel="stylesheets" id="css-theme" th:href="@{stylesheets/assets/css/themes/flat.min.css}"> 
+    <!-- <link rel="stylesheets" id="css-theme" th:href="../assets/css/themes/earth.min.css"> 
+    <!-- <link rel="stylesheets" id="css-theme" th:href="../assets/css/themes/elegance.min.css">
+    <link rel="stylesheets" id="css-theme" th:href="../assets/css/themes/pulse.min.css"> -->
     
-    <!-- <link rel="stylesheet" id="css-theme" href="../assets/css/themes/elegance.min.css"> -->
+    <!-- <link rel="stylesheets" id="css-theme" th:href="../assets/css/themes/elegance.min.css"> -->
 
     <!-- You can include a specific file from css/themes/ folder to alter the default color theme of the template. eg: -->
-    <!-- <link rel="stylesheet" id="css-theme" href="assets/css/themes/flat.min.css"> -->
-    <!-- END Stylesheets -->
+    <!-- <link rel="stylesheets" id="css-theme" th:href="assets/css/themes/flat.min.css"> -->
+    <!-- END stylesheetss -->
   </head>
   <body>
     <!-- Page Container -->
@@ -104,10 +104,10 @@
 
             <!-- User Info -->
             <div class="content-header-item">
-              <a class="img-link mr-5" href="be_pages_generic_profile.html">
-                <img class="img-avatar img-avatar32" src="../assets/media/avatars/avatar15.jpg" alt="">
+              <a class="img-link mr-5" th:href="@{be_pages_generic_profile.html}">
+                <img class="img-avatar img-avatar32" th:src="@{stylesheets/assets/media/avatars/avatar15.jpg}" alt="">
               </a>
-              <a class="align-middle link-effect text-primary-dark font-w600" href="be_pages_generic_profile.html">John Smith</a>
+              <a class="align-middle link-effect text-primary-dark font-w600" th:href="@{be_pages_generic_profile.html}">John Smith</a>
             </div>
             <!-- END User Info -->
           </div>
@@ -119,7 +119,7 @@
           <!-- Search -->
           <div class="block pull-t pull-r-l">
             <div class="block-content block-content-full block-content-sm bg-body-light">
-              <form action="be_pages_generic_search.html" method="post">
+              <form th:action="@{be_pages_generic_search.html}" method="post">
                 <div class="input-group">
                   <input type="text" class="form-control" id="side-overlay-search" name="side-overlay-search" placeholder="Search..">
                   <div class="input-group-append">
@@ -133,143 +133,6 @@
           </div>
           <!-- END Search -->
 
-          <!-- Mini Stats -->
-          <div class="block pull-r-l">
-            <div class="block-content block-content-full block-content-sm bg-body-light">
-              <div class="row">
-                <div class="col-4">
-                  <div class="font-size-sm font-w600 text-uppercase text-muted">Clients</div>
-                  <div class="font-size-h4">460</div>
-                </div>
-                <div class="col-4">
-                  <div class="font-size-sm font-w600 text-uppercase text-muted">Sales</div>
-                  <div class="font-size-h4">728</div>
-                </div>
-                <div class="col-4">
-                  <div class="font-size-sm font-w600 text-uppercase text-muted">Earnings</div>
-                  <div class="font-size-h4">$7,860</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- END Mini Stats -->
-
-          <!-- Friends -->
-          <div class="block pull-r-l">
-            <div class="block-header bg-body-light">
-              <h3 class="block-title"><i class="fa fa-fw fa-users font-size-default mr-5"></i>Friends</h3>
-              <div class="block-options">
-                <button type="button" class="btn-block-option" data-toggle="block-option" data-action="state_toggle" data-action-mode="demo">
-                  <i class="si si-refresh"></i>
-                </button>
-                <button type="button" class="btn-block-option" data-toggle="block-option" data-action="content_toggle"></button>
-              </div>
-            </div>
-            <div class="block-content">
-              <ul class="nav-users push">
-                <li>
-                  <a href="be_pages_generic_profile.html">
-                    <img class="img-avatar" src="assets/media/avatars/avatar8.jpg" alt="">
-                    <i class="fa fa-circle text-success"></i> Sara Fields
-                    <div class="font-w400 font-size-xs text-muted">Photographer</div>
-                  </a>
-                </li>
-                <li>
-                  <a href="be_pages_generic_profile.html">
-                    <img class="img-avatar" src="assets/media/avatars/avatar12.jpg" alt="">
-                    <i class="fa fa-circle text-success"></i> Brian Stevens
-                    <div class="font-w400 font-size-xs text-muted">Web Designer</div>
-                  </a>
-                </li>
-                <li>
-                  <a href="be_pages_generic_profile.html">
-                    <img class="img-avatar" src="assets/media/avatars/avatar4.jpg" alt="">
-                    <i class="fa fa-circle text-warning"></i> Amber Harvey
-                    <div class="font-w400 font-size-xs text-muted">UI Designer</div>
-                  </a>
-                </li>
-                <li>
-                  <a href="be_pages_generic_profile.html">
-                    <img class="img-avatar" src="assets/media/avatars/avatar14.jpg" alt="">
-                    <i class="fa fa-circle text-danger"></i> Justin Hunt
-                    <div class="font-w400 font-size-xs text-muted">Copywriter</div>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <!-- END Friends -->
-
-          <!-- Activity -->
-          <div class="block pull-r-l">
-            <div class="block-header bg-body-light">
-              <h3 class="block-title">
-                <i class="fa fa-fw fa-clock-o font-size-default mr-5"></i>Activity
-              </h3>
-              <div class="block-options">
-                <button type="button" class="btn-block-option" data-toggle="block-option" data-action="state_toggle" data-action-mode="demo">
-                  <i class="si si-refresh"></i>
-                </button>
-                <button type="button" class="btn-block-option" data-toggle="block-option" data-action="content_toggle"></button>
-              </div>
-            </div>
-            <div class="block-content">
-              <ul class="list list-activity">
-                <li>
-                  <i class="si si-wallet text-success"></i>
-                  <div class="font-w600">+$29 New sale</div>
-                  <div>
-                    <a href="javascript:void(0)">Admin Template</a>
-                  </div>
-                  <div class="font-size-xs text-muted">5 min ago</div>
-                </li>
-                <li>
-                  <i class="si si-close text-danger"></i>
-                  <div class="font-w600">Project removed</div>
-                  <div>
-                    <a href="javascript:void(0)">Best Icon Set</a>
-                  </div>
-                  <div class="font-size-xs text-muted">26 min ago</div>
-                </li>
-                <li>
-                  <i class="si si-pencil text-info"></i>
-                  <div class="font-w600">You edited the file</div>
-                  <div>
-                    <a href="javascript:void(0)">
-                      <i class="fa fa-file-text-o"></i> Docs.doc
-                    </a>
-                  </div>
-                  <div class="font-size-xs text-muted">3 hours ago</div>
-                </li>
-                <li>
-                  <i class="si si-plus text-success"></i>
-                  <div class="font-w600">New user</div>
-                  <div>
-                    <a href="javascript:void(0)">StudioWeb - View Profile</a>
-                  </div>
-                  <div class="font-size-xs text-muted">5 hours ago</div>
-                </li>
-                <li>
-                  <i class="si si-wrench text-warning"></i>
-                  <div class="font-w600">App v5.5 is available</div>
-                  <div>
-                    <a href="javascript:void(0)">Update now</a>
-                  </div>
-                  <div class="font-size-xs text-muted">8 hours ago</div>
-                </li>
-                <li>
-                  <i class="si si-user-follow text-pulse"></i>
-                  <div class="font-w600">+1 Friend Request</div>
-                  <div>
-                    <a href="javascript:void(0)">Accept</a>
-                  </div>
-                  <div class="font-size-xs text-muted">1 day ago</div>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <!-- END Activity -->
-
           <!-- Profile -->
           <div class="block pull-r-l">
             <div class="block-header bg-body-light">
@@ -281,7 +144,7 @@
               </div>
             </div>
             <div class="block-content">
-              <form action="be_pages_dashboard.html" method="post" onsubmit="return false;">
+              <form th:action="@{be_pages_dashboard.html}" method="post" onsubmit="return false;">
                 <div class="form-group mb-15">
                   <label for="side-overlay-profile-name">Name</label>
                   <div class="input-group">
@@ -425,7 +288,7 @@
 
               <!-- Logo -->
               <div class="content-header-item">
-                <img src="../pictures/logo lain.png" style="width: 200px; height:45px;">                
+                <img th:src="@{stylesheets/assets/pictures/logo lain.png}" style="width: 200px; height:45px;">                
 
               </div>
               <!-- END Logo -->
@@ -440,18 +303,18 @@
             <div class="content-side content-side-full content-side-user px-10 align-parent">
               <!-- Visible only in mini mode -->
               <div class="sidebar-mini-visible-b align-v animated fadeIn">
-                <img class="img-avatar img-avatar32" src="../assets/media/avatars/avatar15.jpg" alt="">
+                <img class="img-avatar img-avatar32" th:src="@{stylesheets/assets/media/avatars/avatar15.jpg}" alt="">
               </div>
               <!-- END Visible only in mini mode -->
 
               <!-- Visible only in normal mode -->
               <div class="sidebar-mini-hidden-b text-center">
-                <a class="img-link" href="be_pages_generic_profile.html">
-                  <img class="img-avatar" src="../assets/media/avatars/avatar15.jpg" alt="">
+                <a class="img-link" th:href="@{be_pages_generic_profile.html}">
+                  <img class="img-avatar" th:src="@{stylesheets/assets/media/avatars/avatar15.jpg}" alt="">
                 </a>
                 <ul class="list-inline mt-10">
                   <li class="list-inline-item">
-                    <a class="link-effect text-dual-primary-dark font-size-sm font-w600 text-uppercase" href="be_pages_generic_profile.html">Admin</a>
+                    <a class="link-effect text-dual-primary-dark font-size-sm font-w600 text-uppercase" th:href="@{be_pages_generic_profile.html}">Admin</a>
                   </li>
                   <li class="list-inline-item">
                     <!-- Layout API, functionality initialized in Template._uiApiLayout() -->
@@ -460,7 +323,7 @@
                     </a>
                   </li>
                   <li class="list-inline-item">
-                    <a class="link-effect text-dual-primary-dark" href="../sign-in/signIn.html">
+                    <a class="link-effect text-dual-primary-dark" th:href="@{/AdminSignIn}">
                       <i class="si si-logout"></i>
                     </a>
                   </li>
@@ -474,23 +337,23 @@
 <div class="content-side content-side-full">
   <ul class="nav-main">
       <li>
-          <a class="active" href="../dashboard/MydashboardAdmin.html"><i class="si si-cup"></i><span class="sidebar-mini-hide">DASHBOARD</span></a>
+          <a class="active" th:href="@{/MydashboardAdmin}"><i class="si si-cup"></i><span class="sidebar-mini-hide">DASHBOARD</span></a>
         </li>
         <li>
-          <a class="active" href="../profile/adminProfile.html"><i class="si si-user"></i><span class="sidebar-mini-hide">PROFIL</span></a>
+          <a class="active" th:href="@{/adminProfile}"><i class="si si-user"></i><span class="sidebar-mini-hide">PROFIL</span></a>
         </li>
         <li>
-          <a class="active" href="../guru/AdminViewTeacher.html"><i class="si si-people"></i><span class="sidebar-mini-hide">GURU</span></a>
+          <a class="active" th:href="@{/AdminViewTeacher}"><i class="si si-people"></i><span class="sidebar-mini-hide">GURU</span></a>
         </li>
         <li>
         <li>
           <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="si si-layers"></i><span class="sidebar-mini-hide">AKAUN</span></a>
           <ul>
             <li>
-              <a href="../akaun/accountCoordinator.html">KOORDINATOR</a>
+              <a th:href="@{/accountCoordinator}">KOORDINATOR</a>
             </li>
             <li>
-              <a href="../akaun/accountStudent.html">PELAJAR</a>
+              <a th:href="@{/accountStudent}">PELAJAR</a>
             </li>
           </ul>
         </li>
@@ -499,13 +362,13 @@
       <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="si si-layers"></i><span class="sidebar-mini-hide">KATEGORI</span></a>
       <ul>
         <li>
-          <a href="../info_cat/unit.html">Unit Beruniform</a>
+          <a th:href="@{/unit}">Unit Beruniform</a>
         </li>
         <li>
-          <a href="../info_cat/kelab.html">Kelab dan Persatuan</a>
+          <a th:href="@{/kelab}">Kelab dan Persatuan</a>
         </li>
         <li>
-          <a href="../info_cat/sukan.html">Sukan dan Permainan</a>
+          <a th:href="@{/sukan}">Sukan dan Permainan</a>
         </li>
       </ul>
     </li>
@@ -606,12 +469,12 @@
                 <div class="dropdown-divider"></div>
                 <div class="row gutters-tiny text-center">
                   <div class="col-6">
-                    <a class="dropdown-item mb-0" href="be_layout_api.html">
+                    <a class="dropdown-item mb-0" th:href="@{be_layout_api.html}">
                       <i class="si si-chemistry mr-5"></i> Layout API
                     </a>
                   </div>
                   <div class="col-6">
-                    <a class="dropdown-item mb-0" href="be_ui_color_themes.html">
+                    <a class="dropdown-item mb-0" th:href="@{be_ui_color_themes.html}">
                       <i class="fa fa-paint-brush mr-5"></i> Color Themes
                     </a>
                   </div>
@@ -633,7 +496,7 @@
               </button>
               <div class="dropdown-menu dropdown-menu-right min-width-200" aria-labelledby="page-header-user-dropdown">
                 <h5 class="h6 text-center py-10 mb-5 border-b text-uppercase">User</h5>
-                <a class="dropdown-item" href="../profile/adminProfile.html">
+                <a class="dropdown-item" th:href="@{/adminProfile}">
                   <i class="si si-user mr-5"></i> Profile
                 </a>
                 <div class="dropdown-divider"></div>
@@ -641,7 +504,7 @@
                 <!-- END Side Overlay -->
 
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="../sign-in/AdminSignIn.html">
+                <a class="dropdown-item" th:href="@{/AdminSignIn}">
                   <i class="si si-logout mr-5"></i> Sign Out
                 </a>
               </div>
@@ -658,7 +521,7 @@
         <!-- Header Search -->
         <div id="page-header-search" class="overlay-header">
           <div class="content-header content-header-fullrow">
-            <form action="be_pages_generic_search.html" method="post">
+            <form th:action="@{be_pages_generic_search.html}" method="post">
               <div class="input-group">
                 <div class="input-group-prepend">
                   <!-- Close Search Section -->
@@ -730,7 +593,7 @@
                                         </div>
                                         <div class="block-content">
                                             <div id="non-jawatan">
-                                                <form class="js-validation-bootstrap" action="" method="post" enctype="multipart/form-data">
+                                                <form class="js-validation-bootstrap" th:action="" method="post" enctype="multipart/form-data">
                                                     <input type="hidden" name="id_profile" id="id_profile" value="<?php echo $rowProfile['id'] ?>">
                                                     <input type="hidden" name="flag_jawatan" id="flag_jawatan" value="0">
     
@@ -786,7 +649,7 @@
                                     </div>
                                     <div class="block-content">
                                         <div id="non-jawatan">
-                                            <form class="js-validation-bootstrap" action="" method="post" enctype="multipart/form-data">
+                                            <form class="js-validation-bootstrap" th:action="" method="post" enctype="multipart/form-data">
                                                 <input type="hidden" name="id_profile" id="id_profile" value="<?php echo $rowProfile['id'] ?>">
                                                 <input type="hidden" name="flag_jawatan" id="flag_jawatan" value="0">
 
@@ -881,7 +744,7 @@
                                         <td class="text-center">Bola Keranjang</td>
                                         <td class="">Pertandingan Bola Keranjang <br> Tarikh: 24 Julai 2024<?php echo $row['description']; ?></td>
                                         <td class="text-center">
-                                            <form action="" method="POST">
+                                            <form th:action="" method="POST">
                                                 <input type="hidden" class="form-control" id="id_doc_d" name="id_doc_d" value="<?php echo $row['id']; ?>">
                                                 <?php
                                                 // include 'connection.php';
@@ -890,7 +753,7 @@
                                                 // $result = mysqli_fetch_assoc($sql);
                                                 // $resu = $result['name'];
                                                 ?>
-                                                <!--<a type="submit" class="btn btn-sm btn-success" title="Muat Turun" href="download.php?file=SampleFile.pdf" target="_new">
+                                                <!--<a type="submit" class="btn btn-sm btn-success" title="Muat Turun" th:href="download.php?file=SampleFile.pdf" target="_new">
                                                     <i class="fa fa-download"></i>
                                                 </a>-->
                                                 <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#edit_sukan" title="Kemaskini">
@@ -907,7 +770,7 @@
                                         <td class="text-center">Badminton</td>
                                         <td class="">Setiap murid perlu ada raket badminton masing-masing <br> Pemilihan peserta untuk Kejohanan Badminton Daerah akan dibuka pada 12 Februari 2024<?php echo $row['description']; ?></td>
                                         <td class="text-center">
-                                            <form action="" method="POST">
+                                            <form th:action="" method="POST">
                                                 <input type="hidden" class="form-control" id="id_doc_d" name="id_doc_d" value="<?php echo $row['id']; ?>">
                                                 <?php
                                                 // include 'connection.php';
@@ -916,7 +779,7 @@
                                                 // $result = mysqli_fetch_assoc($sql);
                                                 // $resu = $result['name'];
                                                 ?>
-                                                <!--<a type="submit" class="btn btn-sm btn-success" title="Muat Turun" href="download.php?file=SampleFile.pdf" target="_new">
+                                                <!--<a type="submit" class="btn btn-sm btn-success" title="Muat Turun" th:href="download.php?file=SampleFile.pdf" target="_new">
                                                     <i class="fa fa-download"></i>
                                                 </a>-->
                                                 <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#edit_sukan" title="Kemaskini">
@@ -933,16 +796,16 @@
                                         <td class="text-center">Bola Jaring</td>
                                         <td class="">Bayaran bulanan: RM5 <br> Penyertaan Kejohanan Bola Jaring Daerah dibuka pada 15 Mac 2024<?php echo $row['description']; ?></td>
                                         <td class="text-center">
-                                            <form action="" method="POST">
+                                            <form th:action="" method="POST">
                                                 <input type="hidden" class="form-control" id="id_doc_d" name="id_doc_d" value="<?php echo $row['id']; ?>">
-                                                <?php
+                                                <!--<?php
                                                 // include 'connection.php';
                                                 // $table = $prefix . 'document';
                                                 // $sql = mysqli_query($connection, "SELECT * from `$table` WHERE id = (SELECT MAX(id) FROM `$table`)");
                                                 // $result = mysqli_fetch_assoc($sql);
                                                 // $resu = $result['name'];
-                                                ?>
-                                                <!--<a type="submit" class="btn btn-sm btn-success" title="Muat Turun" href="download.php?file=SampleFile.pdf" target="_new">
+                                                ?>-->
+                                                <!--<a type="submit" class="btn btn-sm btn-success" title="Muat Turun" th:href="download.php?file=SampleFile.pdf" target="_new">
                                                     <i class="fa fa-download"></i>
                                                 </a>-->
                                                 <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#edit_sukan" title="Kemaskini">
@@ -954,11 +817,7 @@
                                             </form>
                                         </td>
                                     </tr>
-                                    <?php include "modal/ModalEditDokumen.php" ?>
-                            <?php
-                                }
-                            }
-                            ?>
+ 
                         </tbody>
                     </table>
                 </div>
@@ -1022,7 +881,7 @@
         assets/js/core/jquery.countTo.min.js
         assets/js/core/js.cookie.min.js
     -->
-    <script src="../assets/js/codebase.core.min.js"></script>
+    <script th:src="@{stylesheets/assets/js/codebase.core.min.js}"></script>
 
     <!--
         Codebase JS
@@ -1030,6 +889,6 @@
         Custom functionality including Blocks/Layout API as well as other vital and optional helpers
         webpack is putting everything together at assets/_js/main/app.js
     -->
-    <script src="../assets/js/codebase.app.min.js"></script>
+    <script th:src="@{stylesheets/assets/js/codebase.app.min.js}"></script>
   </body>
 </html>
