@@ -903,13 +903,19 @@
     -->
   <script th:src="@{stylesheets/assets/js/codebase.core.min.js}"></script>
 
-  <!--
+    <!--
         Codebase JS
 
         Custom functionality including Blocks/Layout API as well as other vital and optional helpers
         webpack is putting everything together at assets/_js/main/app.js
     -->
-  <script th:src="@{stylesheets/assets/js/codebase.app.min.js}"></script>
-</body>
+    <script th:src="@{stylesheets/assets/js/codebase.app.min.js}"></script>
 
+    <!-- Page JS Plugins -->
+    <script th:src="@{stylesheets/assets/js/plugins/chartjs/Chart.min.js}"></script>
+    <script th:src="@{stylesheets/assets/js/plugins/slick/slick.min.js}"></script>
+
+    <!-- Page JS Code -->
+    <script th:src="@{stylesheets/assets/js/pages/be_pages_dashboard.min.js}"></script>
+  </body>
 </html>
