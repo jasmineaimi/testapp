@@ -57,6 +57,11 @@ public class GettingStartedApplication {
         return "sign-in/signup";
     }
 
+    @GetMapping("/signupCoordinator")
+    public String signupCoordinator() {
+        return "sign-in/signupCoordinator";
+    }
+
      @GetMapping("/reminder")
     public String reminder() {
         return "sign-in/reminder";
