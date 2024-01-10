@@ -162,6 +162,16 @@ public class GettingStartedApplication {
         return "adminViewTeacher/AdminViewTeacher";
     }
 
+    @GetMapping("/accountCoordinator")
+    public String accountCoordinator(){
+        return "account/accountCoordinator";
+    }
+
+    @GetMapping("/accountStudent")
+    public String accountStudent(){
+        return "account/accountStudent";
+    }
+
     @GetMapping("/unit")
     public String unit(){
         return "info_cat/unit";
